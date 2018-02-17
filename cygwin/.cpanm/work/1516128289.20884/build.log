@@ -1,0 +1,13 @@
+cpanm (App::cpanminus) 1.7043 on perl 5.026001 built for x86_64-cygwin-threads-multi
+Work directory is /home/CVIRTUCIO/.cpanm/work/1516128289.20884
+You have make /usr/bin/make
+You have LWP 6.31
+You have /usr/bin/tar: tar (GNU tar) 1.29
+Packaged by Cygwin (1.29-1)
+Copyright (C) 2015 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by John Gilmore and Jay Fenlason.
+You have /usr/bin/unzip

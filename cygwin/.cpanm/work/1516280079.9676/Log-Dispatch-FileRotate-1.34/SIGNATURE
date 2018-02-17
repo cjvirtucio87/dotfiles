@@ -1,0 +1,53 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.80.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+SHA1 6e0420b2269bd8205f5f74483494eb7b5b69b793 Changes
+SHA1 bab88f54ea8c7c2588e407bd69fad8bf7cb47c1b LICENSE
+SHA1 7ea9af2c355b60c97527f3e29b4c536585d34185 MANIFEST
+SHA1 eb174e472fc75cb6a5a5f04e1dc740d569ad310b MANIFEST.SKIP
+SHA1 ce68235b97bf99bd2f1379be21bad559ff04b015 META.json
+SHA1 a1cc05c8771526eb4bc56c4f10bf2d0cf620dc4c META.yml
+SHA1 cf5d3cd6a1673837acbd9b9071df7db4283a84b2 Makefile.PL
+SHA1 f079f941ad9cffe41267eb006c78e3c18f0408af README
+SHA1 09a836a3d12663365998f7883c5f83a0b7c9527c lib/Log/Dispatch/FileRotate.pm
+SHA1 a7fb2cc77944bede2cd9ca26413792ee0633e524 lib/Log/Dispatch/FileRotate/Flock.pm
+SHA1 d7163cd3f39836d4f64fe3784d544a6f46839bb6 lib/Log/Dispatch/FileRotate/Mutex.pm
+SHA1 2795a301bfcb88ecd1eb29bc1be9fa7610acbb42 t/author-lockfile-race-condition.t
+SHA1 8efad25309730a4d501fb40fc03eda4697303372 t/author-pod-syntax.t
+SHA1 19cc343f8a85c6805bbeb02580487483a6283887 t/author-signature.t
+SHA1 1b0ff3264a10a8bbb678cc7cbec943d838fc7677 t/basic.t
+SHA1 15be71bdf578a8bfc9f43a23751320c1e196ea8b t/file-open-failure.t
+SHA1 fc733ffc186b2407b2d063c6f29bf570c1484f1f t/lockfile-open-failure.t
+SHA1 ebfd5c0be8646d1e8c43515c5b745a63d3815955 t/no-activity-bug.t
+SHA1 ee7b785a353b09549924660364db408f18520456 t/sig-warn-deadlock.t
+SHA1 11e859568dfce86bbb2d75c0eb902199aa23fa7e t/size-with-underscore.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2
+
+iQIVAwUBWbljH0QM7y65VM2OAQhFlhAAw+01NPiVQl9yQiL9KdWrZplIZovoHlKP
+IW+baLOa+zB4jIqlIYjFTdmaOnrbxY5KxatGiloDR0Mj0gxYJOod+AhETJswltzF
+TIcngpim/GBuJPkIC7SfAlfTCQpqHJ+VMygCueMSy+HqRrUYhpHebAuSAAdAejzV
+CYB10kvSDSWyBREwJ7sT8TjMKe1BK7j38IMAL9YIr6mlVM0fEEZay6upPPgz6KpS
+nsnVHAe0+LMoflNAOK7NnSOwDPo8rB7uiSx3GwG5hOL0WJ3yWhrqU73u8mHuGHfm
+VV748+mKopkpEjvN+9uGY6TzF2bJsQL6DTizY3bsW62htPHuEynQCGgb3b55Vq86
+KO2vNJAgaLfYsxY0zsnzhf+WA2PwYu+ikiDFKjQFP0yF3FtHvjL8qbZFe8YB9+ly
+h9sw43xCKpzC+aAcch4lhQybaxlUQaXeJT3vlUI7E+V0sourcdLFwhqvwdAh8/9G
+MPfqnCJi1AiP+TVGNyq8rFS2CVd6m81oY+0WbpB1TsT1dklWcNIXVonx0KE8+daK
+RnHOhjtSAqeXOzIvL3EQFhJmNyyIblD1iXaEN3/Ega6752+CsdbNJ23RQQMyqxVW
+NZ0nBj6/vTXXedvTqkQmk4Lk6vj1vhOqM//5EO+RyJ7XlxRfjUflWOAodNAmBybJ
+kBflCpwNQn4=
+=JG+W
+-----END PGP SIGNATURE-----

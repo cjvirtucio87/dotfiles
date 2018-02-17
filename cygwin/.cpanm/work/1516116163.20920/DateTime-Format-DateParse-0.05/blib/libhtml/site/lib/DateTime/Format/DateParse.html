@@ -1,0 +1,124 @@
+<?xml version="1.0" ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<!-- saved from url=(0017)http://localhost/ -->
+<title>DateTime::Format::DateParse - Parses Date::Parse compatible formats</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:ASSI@cygwin.nonet" />
+</head>
+
+<body id="_podtop_">
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="_podblock_" style="background-color: #cccccc; color: #000" valign="middle">
+<big><strong><span class="_podblock_">&nbsp;DateTime::Format::DateParse - Parses Date::Parse compatible formats</span></strong></big>
+</td></tr>
+</table>
+
+
+
+<ul id="index">
+  <li><a href="#NAME">NAME</a></li>
+  <li><a href="#SYNOPSIS">SYNOPSIS</a></li>
+  <li><a href="#DESCRIPTION">DESCRIPTION</a></li>
+  <li><a href="#USAGE">USAGE</a>
+    <ul>
+      <li><a href="#Import-Parameters">Import Parameters</a></li>
+      <li><a href="#Methods">Methods</a>
+        <ul>
+          <li><a href="#Class-Methods">Class Methods</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#GOTCHAS">GOTCHAS</a></li>
+  <li><a href="#CREDITS">CREDITS</a></li>
+  <li><a href="#SUPPORT">SUPPORT</a></li>
+  <li><a href="#AUTHOR">AUTHOR</a></li>
+  <li><a href="#COPYRIGHT">COPYRIGHT</a></li>
+  <li><a href="#SEE-ALSO">SEE ALSO</a></li>
+</ul>
+
+<a href="#_podtop_"><h1 id="NAME">NAME</h1></a>
+
+<p>DateTime::Format::DateParse - Parses Date::Parse compatible formats</p>
+
+<a href="#_podtop_"><h1 id="SYNOPSIS">SYNOPSIS</h1></a>
+
+<pre><code>    use DateTime::Format::DateParse;
+
+    my $dt = DateTime::Format::DateParse-&gt;parse_datetime( $date );
+    my $dt = DateTime::Format::DateParse-&gt;parse_datetime( $date, $zone );</code></pre>
+
+<a href="#_podtop_"><h1 id="DESCRIPTION">DESCRIPTION</h1></a>
+
+<p>This module is a compatibility wrapper around <a href="../../local/share/perl5/site_perl/5.26/Date/Parse.html">Date::Parse</a>.</p>
+
+<a href="#_podtop_"><h1 id="USAGE">USAGE</h1></a>
+
+<h2 id="Import-Parameters">Import Parameters</h2>
+
+<p>This module accepts no arguments to it&#39;s <code>import</code> method and exports no <i>symbols</i>.</p>
+
+<h2 id="Methods">Methods</h2>
+
+<h3 id="Class-Methods">Class Methods</h3>
+
+<ul>
+
+<li><p>parse_datetime($date [, $zone])</p>
+
+<p>Accepts a <a href="../../local/share/perl5/site_perl/5.26/Date/Parse.html">Date::Parse</a> compatible <code>$date</code> string and optionally a <a href="../../local/share/perl5/site_perl/5.26/Time/Zone.html">Time::Zone</a> compatible <code>$zone</code> string.</p>
+
+<p>Returns a <a>DateTime</a> object.</p>
+
+</li>
+</ul>
+
+<a href="#_podtop_"><h1 id="GOTCHAS">GOTCHAS</h1></a>
+
+<ul>
+
+<li><p>If <a>parse_datetime</a> is called on a <code>$date</code> that doesn&#39;t know specify a timezone and <code>$zone</code> is not set, then the timezone of the returned <a>DateTime</a> object will be set to the <code>local</code> timezone. This is consistent with the behavior of <a href="../../local/share/perl5/site_perl/5.26/Date/Parse.html">Date::Parse</a>.</p>
+
+</li>
+<li><p>If <a>parse_datetime</a> is called without a <code>$zone</code> but the <code>$date</code> string <i>does</i> specify a timezone/offset or if <a>parse_datetime</a> is called with a <code>$zone</code> that <a href="../../local/share/perl5/site_perl/5.26/DateTime/TimeZone.html">DateTime::TimeZone</a> does not understand, the returned <a>DateTime</a> object will have it&#39;s timezone set to a fixed offset from UTC. This means that <code>DST</code> information is not available and date math will not reflect <code>DST</code> transitions. This may be resolved for true timezones by using the <a>DateTime::TimeZone::Alias</a> module to <code>alias</code> the <a href="../../local/share/perl5/site_perl/5.26/Time/Zone.html">Time::Zone</a> timezone to an Olson DB name. This may be done automatically in a future release.</p>
+
+</li>
+</ul>
+
+<a href="#_podtop_"><h1 id="CREDITS">CREDITS</h1></a>
+
+<p>Graham Barr (GBARR) &lt;gbarr@pobox.com&gt;, author of <a href="../../local/share/perl5/site_perl/5.26/Date/Parse.html">Date::Parse</a></p>
+
+<p>Everyone at the DateTime <code>Asylum</code>.</p>
+
+<a href="#_podtop_"><h1 id="SUPPORT">SUPPORT</h1></a>
+
+<p>Support for this module is provided via the &lt;datetime@perl.org&gt; email list. See <a href="http://lists.perl.org/">http://lists.perl.org/</a> for more details.</p>
+
+<a href="#_podtop_"><h1 id="AUTHOR">AUTHOR</h1></a>
+
+<p>Joshua Hoblitt (JHOBLITT) &lt;jhoblitt@cpan.org&gt;</p>
+
+<a href="#_podtop_"><h1 id="COPYRIGHT">COPYRIGHT</h1></a>
+
+<p>Copyright (c) 2005-6 Joshua Hoblitt. All rights reserved. This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.</p>
+
+<p>The full text of the licenses can be found in the <i>LICENSE</i> file included with this module, or in <a href="../../share/perl5/5.26/pods/perlartistic.html">perlartistic</a> and <a href="../../share/perl5/5.26/pods/perlgpl.html">perlgpl</a> as supplied with Perl 5.8.1 and later.</p>
+
+<a href="#_podtop_"><h1 id="SEE-ALSO">SEE ALSO</h1></a>
+
+<p><a href="../../local/share/perl5/site_perl/5.26/Date/Parse.html">Date::Parse</a>, <a href="../../local/share/perl5/site_perl/5.26/Time/Zone.html">Time::Zone</a>, <a>DateTime</a>, <a href="../../local/share/perl5/site_perl/5.26/DateTime/TimeZone.html">DateTime::TimeZone</a>, <a>DateTime::TimeZone::Alias</a>, <a href="http://datetime.perl.org/">http://datetime.perl.org/</a></p>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="_podblock_" style="background-color: #cccccc; color: #000" valign="middle">
+<big><strong><span class="_podblock_">&nbsp;DateTime::Format::DateParse - Parses Date::Parse compatible formats</span></strong></big>
+</td></tr>
+</table>
+
+</body>
+
+</html>
+
+
