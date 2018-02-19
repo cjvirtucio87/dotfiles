@@ -1,0 +1,1 @@
+alias libcode="cd ~/Documents/Code/"

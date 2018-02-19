@@ -1,0 +1,333 @@
+{
+  "{\"filename\":\"/Users/cjvirtucio/Documents/Code/spring-boot-react/src/main/resources/webpack.production.config.babel.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/Users/cjvirtucio/Documents/Code/spring-boot-react/src/main/resources\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.25.0": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "path",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "path"
+              }
+            ]
+          },
+          {
+            "source": "webpack",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "webpack"
+              }
+            ]
+          },
+          {
+            "source": "autoprefixer",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "autoprefixer"
+              }
+            ]
+          },
+          {
+            "source": "extract-text-webpack-plugin",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "ExtractTextPlugin"
+              }
+            ]
+          },
+          {
+            "source": "html-webpack-plugin",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "HtmlWebpackPlugin"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/Users/cjvirtucio/Documents/Code/spring-boot-react/src/main/resources/webpack.production.config.babel.js",
+      "filenameRelative": "/Users/cjvirtucio/Documents/Code/spring-boot-react/src/main/resources/webpack.production.config.babel.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "webpack.production.config.babel.js",
+      "sourceFileName": "webpack.production.config.babel.js",
+      "sourceRoot": "/Users/cjvirtucio/Documents/Code/spring-boot-react/src/main/resources",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/Users/cjvirtucio/Documents/Code/spring-boot-react/src/main/resources",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "webpack.production.config.babel"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _path = require('path');\n\nvar _path2 = _interopRequireDefault(_path);\n\nvar _webpack = require('webpack');\n\nvar _webpack2 = _interopRequireDefault(_webpack);\n\nvar _autoprefixer = require('autoprefixer');\n\nvar _autoprefixer2 = _interopRequireDefault(_autoprefixer);\n\nvar _extractTextWebpackPlugin = require('extract-text-webpack-plugin');\n\nvar _extractTextWebpackPlugin2 = _interopRequireDefault(_extractTextWebpackPlugin);\n\nvar _htmlWebpackPlugin = require('html-webpack-plugin');\n\nvar _htmlWebpackPlugin2 = _interopRequireDefault(_htmlWebpackPlugin);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = {\n  entry: {\n    server: './app/scripts/server.js',\n    client: './app/scripts/client.js'\n  },\n  output: {\n    path: _path2.default.join(__dirname, 'public'),\n    filename: '/[name].js'\n  },\n  resolve: {\n    extensions: ['', '.js', '.css'],\n    alias: {\n      'styles': __dirname + '/app/styles',\n      'components': __dirname + '/app/scripts/components',\n      'utils': __dirname + '/app/scripts/utils',\n      'images': __dirname + '/app/images'\n    }\n  },\n  module: {\n    loaders: [{ test: /\\.(css|scss)$/, loader: _extractTextWebpackPlugin2.default.extract('style-loader', 'css-loader!postcss-loader!sass-loader') }, { test: /\\.js$/, exclude: /node_modules/, loader: 'babel-loader' }, { test: /\\.(gif|png|jpg)$/, loader: 'file-loader?name=images/[name].[ext]&mimeType=image/[ext]&limit=100000' }, { test: /\\.(woff(2)?|eot|ttf|svg)(\\?[a-z0-9=\\.]+)?$/, loader: 'url-loader?limit=100000' }]\n  },\n  postcss: [(0, _autoprefixer2.default)({ browsers: ['last 5 versions'] })],\n  sassLoader: { precision: 8 },\n  plugins: [new _webpack2.default.DefinePlugin({\n    'process.env': {\n      'NODE_ENV': JSON.stringify('production')\n    }\n  }), new _webpack2.default.optimize.UglifyJsPlugin({\n    compress: { warnings: true }\n  }), new _extractTextWebpackPlugin2.default('/[name].css'), new _htmlWebpackPlugin2.default({\n    hash: true,\n    template: 'app/index.html',\n    filename: 'index.html',\n    minify: {\n      collapseWhitespace: true\n    },\n    excludeChunks: ['server']\n  })]\n}; /*global __dirname*/\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2sucHJvZHVjdGlvbi5jb25maWcuYmFiZWwuanMiXSwibmFtZXMiOlsiZW50cnkiLCJzZXJ2ZXIiLCJjbGllbnQiLCJvdXRwdXQiLCJwYXRoIiwiam9pbiIsIl9fZGlybmFtZSIsImZpbGVuYW1lIiwicmVzb2x2ZSIsImV4dGVuc2lvbnMiLCJhbGlhcyIsIm1vZHVsZSIsImxvYWRlcnMiLCJ0ZXN0IiwibG9hZGVyIiwiZXh0cmFjdCIsImV4Y2x1ZGUiLCJwb3N0Y3NzIiwiYnJvd3NlcnMiLCJzYXNzTG9hZGVyIiwicHJlY2lzaW9uIiwicGx1Z2lucyIsIkRlZmluZVBsdWdpbiIsIkpTT04iLCJzdHJpbmdpZnkiLCJvcHRpbWl6ZSIsIlVnbGlmeUpzUGx1Z2luIiwiY29tcHJlc3MiLCJ3YXJuaW5ncyIsImhhc2giLCJ0ZW1wbGF0ZSIsIm1pbmlmeSIsImNvbGxhcHNlV2hpdGVzcGFjZSIsImV4Y2x1ZGVDaHVua3MiXSwibWFwcGluZ3MiOiI7Ozs7OztBQUNBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7O0FBQ0E7Ozs7OztrQkFFZTtBQUNiQSxTQUFPO0FBQ0xDLFlBQVEseUJBREg7QUFFTEMsWUFBUTtBQUZILEdBRE07QUFLYkMsVUFBUTtBQUNOQyxVQUFNLGVBQUtDLElBQUwsQ0FBVUMsU0FBVixFQUFxQixRQUFyQixDQURBO0FBRU5DLGNBQVU7QUFGSixHQUxLO0FBU2JDLFdBQVM7QUFDUEMsZ0JBQVksQ0FBQyxFQUFELEVBQUssS0FBTCxFQUFZLE1BQVosQ0FETDtBQUVQQyxXQUFPO0FBQ0wsZ0JBQVVKLFlBQVksYUFEakI7QUFFTCxvQkFBY0EsWUFBWSx5QkFGckI7QUFHTCxlQUFTQSxZQUFZLG9CQUhoQjtBQUlMLGdCQUFVQSxZQUFZO0FBSmpCO0FBRkEsR0FUSTtBQWtCYkssVUFBUTtBQUNOQyxhQUFTLENBQ1AsRUFBQ0MsTUFBTSxlQUFQLEVBQXdCQyxRQUFRLG1DQUFrQkMsT0FBbEIsQ0FBMEIsY0FBMUIsRUFBMEMsdUNBQTFDLENBQWhDLEVBRE8sRUFFUCxFQUFDRixNQUFNLE9BQVAsRUFBZ0JHLFNBQVMsY0FBekIsRUFBeUNGLFFBQVEsY0FBakQsRUFGTyxFQUdQLEVBQUNELE1BQU0sa0JBQVAsRUFBMkJDLFFBQVEsd0VBQW5DLEVBSE8sRUFJUCxFQUFDRCxNQUFNLDRDQUFQLEVBQXFEQyxRQUFRLHlCQUE3RCxFQUpPO0FBREgsR0FsQks7QUEwQmJHLFdBQVMsQ0FBRSw0QkFBYSxFQUFFQyxVQUFVLENBQUMsaUJBQUQsQ0FBWixFQUFiLENBQUYsQ0ExQkk7QUEyQmJDLGNBQVksRUFBQ0MsV0FBVyxDQUFaLEVBM0JDO0FBNEJiQyxXQUFTLENBQ1AsSUFBSSxrQkFBUUMsWUFBWixDQUF5QjtBQUN2QixtQkFBZTtBQUNiLGtCQUFZQyxLQUFLQyxTQUFMLENBQWUsWUFBZjtBQURDO0FBRFEsR0FBekIsQ0FETyxFQU1QLElBQUksa0JBQVFDLFFBQVIsQ0FBaUJDLGNBQXJCLENBQW9DO0FBQ2xDQyxjQUFVLEVBQUNDLFVBQVUsSUFBWDtBQUR3QixHQUFwQyxDQU5PLEVBU1AsdUNBQXNCLGFBQXRCLENBVE8sRUFVUCxnQ0FBc0I7QUFDcEJDLFVBQU0sSUFEYztBQUVwQkMsY0FBVSxnQkFGVTtBQUdwQnZCLGNBQVUsWUFIVTtBQUlwQndCLFlBQVE7QUFDTkMsMEJBQW9CO0FBRGQsS0FKWTtBQU9wQkMsbUJBQWUsQ0FBQyxRQUFEO0FBUEssR0FBdEIsQ0FWTztBQTVCSSxDLEVBUGYiLCJmaWxlIjoid2VicGFjay5wcm9kdWN0aW9uLmNvbmZpZy5iYWJlbC5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvY2p2aXJ0dWNpby9Eb2N1bWVudHMvQ29kZS9zcHJpbmctYm9vdC1yZWFjdC9zcmMvbWFpbi9yZXNvdXJjZXMiLCJzb3VyY2VzQ29udGVudCI6WyIvKmdsb2JhbCBfX2Rpcm5hbWUqL1xuaW1wb3J0IHBhdGggZnJvbSAncGF0aCc7XG5pbXBvcnQgd2VicGFjayBmcm9tICd3ZWJwYWNrJztcbmltcG9ydCBhdXRvcHJlZml4ZXIgZnJvbSAnYXV0b3ByZWZpeGVyJztcbmltcG9ydCBFeHRyYWN0VGV4dFBsdWdpbiBmcm9tICdleHRyYWN0LXRleHQtd2VicGFjay1wbHVnaW4nO1xuaW1wb3J0IEh0bWxXZWJwYWNrUGx1Z2luIGZyb20gJ2h0bWwtd2VicGFjay1wbHVnaW4nO1xuXG5leHBvcnQgZGVmYXVsdCB7XG4gIGVudHJ5OiB7XG4gICAgc2VydmVyOiAnLi9hcHAvc2NyaXB0cy9zZXJ2ZXIuanMnLFxuICAgIGNsaWVudDogJy4vYXBwL3NjcmlwdHMvY2xpZW50LmpzJ1xuICB9LFxuICBvdXRwdXQ6IHtcbiAgICBwYXRoOiBwYXRoLmpvaW4oX19kaXJuYW1lLCAncHVibGljJyksXG4gICAgZmlsZW5hbWU6ICcvW25hbWVdLmpzJ1xuICB9LFxuICByZXNvbHZlOiB7XG4gICAgZXh0ZW5zaW9uczogWycnLCAnLmpzJywgJy5jc3MnXSxcbiAgICBhbGlhczoge1xuICAgICAgJ3N0eWxlcyc6IF9fZGlybmFtZSArICcvYXBwL3N0eWxlcycsXG4gICAgICAnY29tcG9uZW50cyc6IF9fZGlybmFtZSArICcvYXBwL3NjcmlwdHMvY29tcG9uZW50cycsXG4gICAgICAndXRpbHMnOiBfX2Rpcm5hbWUgKyAnL2FwcC9zY3JpcHRzL3V0aWxzJyxcbiAgICAgICdpbWFnZXMnOiBfX2Rpcm5hbWUgKyAnL2FwcC9pbWFnZXMnXG4gICAgfVxuICB9LFxuICBtb2R1bGU6IHtcbiAgICBsb2FkZXJzOiBbXG4gICAgICB7dGVzdDogL1xcLihjc3N8c2NzcykkLywgbG9hZGVyOiBFeHRyYWN0VGV4dFBsdWdpbi5leHRyYWN0KCdzdHlsZS1sb2FkZXInLCAnY3NzLWxvYWRlciFwb3N0Y3NzLWxvYWRlciFzYXNzLWxvYWRlcicpfSxcbiAgICAgIHt0ZXN0OiAvXFwuanMkLywgZXhjbHVkZTogL25vZGVfbW9kdWxlcy8sIGxvYWRlcjogJ2JhYmVsLWxvYWRlcid9LFxuICAgICAge3Rlc3Q6IC9cXC4oZ2lmfHBuZ3xqcGcpJC8sIGxvYWRlcjogJ2ZpbGUtbG9hZGVyP25hbWU9aW1hZ2VzL1tuYW1lXS5bZXh0XSZtaW1lVHlwZT1pbWFnZS9bZXh0XSZsaW1pdD0xMDAwMDAnfSxcbiAgICAgIHt0ZXN0OiAvXFwuKHdvZmYoMik/fGVvdHx0dGZ8c3ZnKShcXD9bYS16MC05PVxcLl0rKT8kLywgbG9hZGVyOiAndXJsLWxvYWRlcj9saW1pdD0xMDAwMDAnfVxuICAgIF1cbiAgfSxcbiAgcG9zdGNzczogWyBhdXRvcHJlZml4ZXIoeyBicm93c2VyczogWydsYXN0IDUgdmVyc2lvbnMnXSB9KSBdLFxuICBzYXNzTG9hZGVyOiB7cHJlY2lzaW9uOiA4fSxcbiAgcGx1Z2luczogW1xuICAgIG5ldyB3ZWJwYWNrLkRlZmluZVBsdWdpbih7XG4gICAgICAncHJvY2Vzcy5lbnYnOiB7XG4gICAgICAgICdOT0RFX0VOVic6IEpTT04uc3RyaW5naWZ5KCdwcm9kdWN0aW9uJylcbiAgICAgIH1cbiAgICB9KSxcbiAgICBuZXcgd2VicGFjay5vcHRpbWl6ZS5VZ2xpZnlKc1BsdWdpbih7XG4gICAgICBjb21wcmVzczoge3dhcm5pbmdzOiB0cnVlfVxuICAgIH0pLFxuICAgIG5ldyBFeHRyYWN0VGV4dFBsdWdpbignL1tuYW1lXS5jc3MnKSxcbiAgICBuZXcgSHRtbFdlYnBhY2tQbHVnaW4oe1xuICAgICAgaGFzaDogdHJ1ZSxcbiAgICAgIHRlbXBsYXRlOiAnYXBwL2luZGV4Lmh0bWwnLFxuICAgICAgZmlsZW5hbWU6ICdpbmRleC5odG1sJyxcbiAgICAgIG1pbmlmeToge1xuICAgICAgICBjb2xsYXBzZVdoaXRlc3BhY2U6IHRydWVcbiAgICAgIH0sXG4gICAgICBleGNsdWRlQ2h1bmtzOiBbJ3NlcnZlciddXG4gICAgfSlcbiAgXVxufTtcbiJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "webpack.production.config.babel.js"
+      ],
+      "names": [
+        "entry",
+        "server",
+        "client",
+        "output",
+        "path",
+        "join",
+        "__dirname",
+        "filename",
+        "resolve",
+        "extensions",
+        "alias",
+        "module",
+        "loaders",
+        "test",
+        "loader",
+        "extract",
+        "exclude",
+        "postcss",
+        "browsers",
+        "sassLoader",
+        "precision",
+        "plugins",
+        "DefinePlugin",
+        "JSON",
+        "stringify",
+        "optimize",
+        "UglifyJsPlugin",
+        "compress",
+        "warnings",
+        "hash",
+        "template",
+        "minify",
+        "collapseWhitespace",
+        "excludeChunks"
+      ],
+      "mappings": ";;;;;;AACA;;;;AACA;;;;AACA;;;;AACA;;;;AACA;;;;;;kBAEe;AACbA,SAAO;AACLC,YAAQ,yBADH;AAELC,YAAQ;AAFH,GADM;AAKbC,UAAQ;AACNC,UAAM,eAAKC,IAAL,CAAUC,SAAV,EAAqB,QAArB,CADA;AAENC,cAAU;AAFJ,GALK;AASbC,WAAS;AACPC,gBAAY,CAAC,EAAD,EAAK,KAAL,EAAY,MAAZ,CADL;AAEPC,WAAO;AACL,gBAAUJ,YAAY,aADjB;AAEL,oBAAcA,YAAY,yBAFrB;AAGL,eAASA,YAAY,oBAHhB;AAIL,gBAAUA,YAAY;AAJjB;AAFA,GATI;AAkBbK,UAAQ;AACNC,aAAS,CACP,EAACC,MAAM,eAAP,EAAwBC,QAAQ,mCAAkBC,OAAlB,CAA0B,cAA1B,EAA0C,uCAA1C,CAAhC,EADO,EAEP,EAACF,MAAM,OAAP,EAAgBG,SAAS,cAAzB,EAAyCF,QAAQ,cAAjD,EAFO,EAGP,EAACD,MAAM,kBAAP,EAA2BC,QAAQ,wEAAnC,EAHO,EAIP,EAACD,MAAM,4CAAP,EAAqDC,QAAQ,yBAA7D,EAJO;AADH,GAlBK;AA0BbG,WAAS,CAAE,4BAAa,EAAEC,UAAU,CAAC,iBAAD,CAAZ,EAAb,CAAF,CA1BI;AA2BbC,cAAY,EAACC,WAAW,CAAZ,EA3BC;AA4BbC,WAAS,CACP,IAAI,kBAAQC,YAAZ,CAAyB;AACvB,mBAAe;AACb,kBAAYC,KAAKC,SAAL,CAAe,YAAf;AADC;AADQ,GAAzB,CADO,EAMP,IAAI,kBAAQC,QAAR,CAAiBC,cAArB,CAAoC;AAClCC,cAAU,EAACC,UAAU,IAAX;AADwB,GAApC,CANO,EASP,uCAAsB,aAAtB,CATO,EAUP,gCAAsB;AACpBC,UAAM,IADc;AAEpBC,cAAU,gBAFU;AAGpBvB,cAAU,YAHU;AAIpBwB,YAAQ;AACNC,0BAAoB;AADd,KAJY;AAOpBC,mBAAe,CAAC,QAAD;AAPK,GAAtB,CAVO;AA5BI,C,EAPf",
+      "file": "webpack.production.config.babel.js",
+      "sourceRoot": "/Users/cjvirtucio/Documents/Code/spring-boot-react/src/main/resources",
+      "sourcesContent": [
+        "/*global __dirname*/\nimport path from 'path';\nimport webpack from 'webpack';\nimport autoprefixer from 'autoprefixer';\nimport ExtractTextPlugin from 'extract-text-webpack-plugin';\nimport HtmlWebpackPlugin from 'html-webpack-plugin';\n\nexport default {\n  entry: {\n    server: './app/scripts/server.js',\n    client: './app/scripts/client.js'\n  },\n  output: {\n    path: path.join(__dirname, 'public'),\n    filename: '/[name].js'\n  },\n  resolve: {\n    extensions: ['', '.js', '.css'],\n    alias: {\n      'styles': __dirname + '/app/styles',\n      'components': __dirname + '/app/scripts/components',\n      'utils': __dirname + '/app/scripts/utils',\n      'images': __dirname + '/app/images'\n    }\n  },\n  module: {\n    loaders: [\n      {test: /\\.(css|scss)$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader!sass-loader')},\n      {test: /\\.js$/, exclude: /node_modules/, loader: 'babel-loader'},\n      {test: /\\.(gif|png|jpg)$/, loader: 'file-loader?name=images/[name].[ext]&mimeType=image/[ext]&limit=100000'},\n      {test: /\\.(woff(2)?|eot|ttf|svg)(\\?[a-z0-9=\\.]+)?$/, loader: 'url-loader?limit=100000'}\n    ]\n  },\n  postcss: [ autoprefixer({ browsers: ['last 5 versions'] }) ],\n  sassLoader: {precision: 8},\n  plugins: [\n    new webpack.DefinePlugin({\n      'process.env': {\n        'NODE_ENV': JSON.stringify('production')\n      }\n    }),\n    new webpack.optimize.UglifyJsPlugin({\n      compress: {warnings: true}\n    }),\n    new ExtractTextPlugin('/[name].css'),\n    new HtmlWebpackPlugin({\n      hash: true,\n      template: 'app/index.html',\n      filename: 'index.html',\n      minify: {\n        collapseWhitespace: true\n      },\n      excludeChunks: ['server']\n    })\n  ]\n};\n"
+      ]
+    },
+    "mtime": 1498341521000
+  }
+}
