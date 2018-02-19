@@ -52,3 +52,6 @@ nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
 nmap <silent> <tab> <C-w><C-w>
+
+" vim-go configuration
+let g:go_metalinter_autosave = 1

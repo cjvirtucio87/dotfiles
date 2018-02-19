@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/cygdrive/C/Users/CVIRTUCIO/git/cjvirtucio-brightly-auto'
 let g:netrw_dirhist_2='/cygdrive/C/Users/CVIRTUCIO/git/oversight-oversight-config'
 let g:netrw_dirhist_3='/cygdrive/C/Users/CVIRTUCIO/git/asias-asias-config'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/cygdrive/C/Users/CVIRTUCIO/git/caasd-tableau-server-mana
 let g:netrw_dirhist_6='/home/CVIRTUCIO/shell_init/git_config'
 let g:netrw_dirhist_7='/home/CVIRTUCIO/shell_init/go_config'
 let g:netrw_dirhist_8='/tmp'
+let g:netrw_dirhist_9='/home/CVIRTUCIO/dotfiles/cygwin/.vim/plugged'
