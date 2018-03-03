@@ -5,7 +5,6 @@ source ~/.ruby_conf.sh
 source ~/.git_conf.sh
 source ~/.viking_conf.sh
 source ~/.libcode_conf.sh
-source ~/.prag_conf.sh
 source ~/.mov_converter_conf.sh
 source ~/.java_conf.sh
 
