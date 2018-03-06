@@ -8,6 +8,10 @@ source ~/.libcode_conf.sh
 source ~/.mov_converter_conf.sh
 source ~/.java_conf.sh
 
+# enable colored output
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi

@@ -3,3 +3,5 @@
 # Please adapt and uncomment the following lines:
 	name = cjvirtucio87
 	email = cjv287@gmail.com
+[core]
+	editor = nvim
