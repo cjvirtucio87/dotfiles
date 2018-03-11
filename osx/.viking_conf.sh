@@ -1,1 +1,0 @@
-alias vcs="cd ~/Documents/Code/VCS/"
