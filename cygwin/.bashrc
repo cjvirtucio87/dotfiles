@@ -27,5 +27,5 @@ if [ -f "${HOME}/.bashrc_env" ] ; then
 fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/CVIRTUCIO/.sdkman"
-[[ -s "/home/CVIRTUCIO/.sdkman/bin/sdkman-init.sh" ]] && source "/home/CVIRTUCIO/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="/home/cvirtucio/.sdkman"
+[[ -s "/home/cvirtucio/.sdkman/bin/sdkman-init.sh" ]] && source "/home/cvirtucio/.sdkman/bin/sdkman-init.sh"
