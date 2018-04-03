@@ -5,12 +5,12 @@ if [[ $HOSTNAME == "caasd-portal-automation.mitre.org" ]]; then
     
     # FPL Configuration (yes, order matters)
     # if you work on asias
-    if [ -d /opt/build/asias/bin/asiasEnv ]; then
+    if [ -f /opt/build/asias/bin/asiasEnv ]; then
         . /opt/build/asias/bin/asiasEnv
     fi
  
     # if you work on facility safety
-    if [ -d /opt/build/facility/bin/facilityEnv ]; then
+    if [ -f /opt/build/facility/bin/facilityEnv ]; then
         . /opt/build/facility/bin/facilityEnv
     fi
  
