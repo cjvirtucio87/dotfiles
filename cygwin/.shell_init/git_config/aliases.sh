@@ -1,3 +1,5 @@
 alias gpom="git push origin master"
 alias gcm="git commit -m"
 alias gaa="git add -A"
+alias gspushm="git stash push -m"
+alias gspop="git stash pop"
