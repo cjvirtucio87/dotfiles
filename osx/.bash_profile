@@ -1,4 +1,4 @@
-source ./.shell/git
+source ~/.shell/git
 
 export PATH=/usr/local/bin:$PATH
 
