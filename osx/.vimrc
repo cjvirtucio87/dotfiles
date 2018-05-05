@@ -15,3 +15,10 @@ set expandtab " on pressing tab, insert two spaces
 set tabstop=2 " show existing tab with two spaces width
 set softtabstop=2
 set shiftwidth=2 " when indenting with '>' key, use 2 spaces
+
+" vimplug
+call plug#begin('~/.vim/plugged')
+
+Plug 'fatish/vim-go', { 'do': ':GoUpdateBinaries' }
+
+call plug#end()
