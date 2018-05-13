@@ -35,6 +35,16 @@ else
   colorscheme literal_tango
 endif
 
+
+if &term =~ "xterm\\|rxvt"
+  let &t_SI = "\<Esc>]12;#11dd00\x7\<Esc>[1 q"
+  let &t_EI = "\<Esc>]12;#cc1111\x7\<Esc>[1 q"
+  silent !echo -ne "\033]12;\#cc1111\007"
+  " reset cursor when vim exits
+  autocmd VimLeave * silent !echo -ne "\033]12;\#11dd00\007"
+  " use \003]12;gray\007 for gnome-terminal
+endif
+
 set shiftwidth=4
 set softtabstop=0
 set tabstop=8
