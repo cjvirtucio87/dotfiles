@@ -1,3 +1,24 @@
-syntax on
+" ### GENERAL SETTINGS ###
+" colors
+syntax on " turn syntax highlighting on
+colorscheme fruchtig " use selected colorscheme
 
-colorscheme fruchtig
+" clipboard
+set clipboard=unnamed " attach to os clipboard
+
+" backspace
+set backspace=2 " make backspace work like most other programs
+
+" tabs and spaces
+filetype plugin indent on
+set expandtab " on pressing tab, insert two spaces
+set tabstop=2 " show existing tab with two spaces width
+set softtabstop=2
+set shiftwidth=2 " when indenting with '>' key, use 2 spaces
+
+" vimplug
+call plug#begin('~/.vim/plugged')
+
+Plug 'fatish/vim-go', { 'do': ':GoUpdateBinaries' }
+
+call plug#end()
