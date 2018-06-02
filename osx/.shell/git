@@ -1,5 +1,6 @@
 export GIT_HOME="$HOME/git"
 
 alias gpom="git push origin master"
+alias gpoc="git push origin"
 alias gcm="git commit -m"
 alias gcb="git checkout -b"

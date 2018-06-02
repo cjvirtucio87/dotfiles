@@ -16,5 +16,15 @@ function mygovendor {
     printf "Resetting \$PATH.";
 }
 
+function mygopkg {
+    MINGW_GIT='/cygdrive/c/Tools/Git/mingw64/bin';
+    PATH=$MINGW_GIT:$PATH;
+    printf "Running gopkg with the Windows installation of Git.\n";
+    $GOBIN/gopkg $@;
+    PATH=`echo $PATH | sed "s,$MINGW_GIT\:,,g"`;
+    printf "Resetting \$PATH.";
+}
+
 alias go=mygo
 alias govendor=mygovendor
+alias gopkg=mygopkg
