@@ -6,11 +6,11 @@ if [ -z "$1" ]; then
 fi
 
 set_props_file() {
-    local base='~/git/caasd-portal-integration-test/src/main/resources'
+    local base="$HOME/git/caasd-portal-integration-test/src/main/resources"
     local src=$1;
     local dest='portal.driver.properties';
 
-    mv "$base/$src" "$base/$dest";
+    cp "$base/$src" "$base/$dest";
 }
 
 case $1 in
@@ -28,5 +28,10 @@ case $1 in
         exit 1;
         ;;
 esac
+
+if [ "$?" != 0 ]; then
+    echo "Fail!";
+    exit 1;
+fi
 
 echo "Done!";
