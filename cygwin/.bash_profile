@@ -18,6 +18,8 @@ if [ -d "${HOME}/bin" ] ; then
   PATH="${HOME}/bin:${PATH}"
 fi
 
+PATH=$HOME/.helpers/bin:$PATH
+
 source $HOME/.shell_init/caasd/index.sh
 source $HOME/.shell_init/git_config/index.sh
 source $HOME/.shell_init/go_config/index.sh

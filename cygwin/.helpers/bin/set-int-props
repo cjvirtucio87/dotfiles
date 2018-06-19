@@ -1,0 +1,32 @@
+#!/usr/bin/bash
+
+if [ -z "$1" ]; then
+    echo "ERROR: Must pass a coordinate.";
+    exit 1;
+fi
+
+set_props_file() {
+    local base='~/git/caasd-portal-integration-test/src/main/resources'
+    local src=$1;
+    local dest='portal.driver.properties';
+
+    mv "$base/$src" "$base/$dest";
+}
+
+case $1 in
+    'asias.localhost_lr7'*)
+        set_props_file 'portal.driver.properties.asias.local';
+        ;;
+    'asias.dev_lr7'*)
+        set_props_file 'portal.driver.properties.asias.dev_lr7';
+        ;;
+    'facility.dev_lr7'*)
+        set_props_file 'portal.driver.properties.facility.dev_lr7';
+        ;;
+    *)
+        echo "Invalid coordinate, '$1'";
+        exit 1;
+        ;;
+esac
+
+echo "Done!";
