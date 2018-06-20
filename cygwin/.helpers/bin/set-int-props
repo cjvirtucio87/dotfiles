@@ -1,17 +1,23 @@
 #!/usr/bin/bash
 
+PORTAL_INT_RESOURCES="$HOME/git/caasd-portal-integration-test/src/main/resources"
+
+set_props_file() {
+    local src=$1;
+    local dest='portal.driver.properties';
+
+    cp "$PORTAL_INT_RESOURCES/$src" "$PORTAL_INT_RESOURCES/$dest";
+}
+
 if [ -z "$1" ]; then
     echo "ERROR: Must pass a coordinate.";
     exit 1;
 fi
 
-set_props_file() {
-    local base="$HOME/git/caasd-portal-integration-test/src/main/resources"
-    local src=$1;
-    local dest='portal.driver.properties';
-
-    cp "$base/$src" "$base/$dest";
-}
+if [ ! -d "$PORTAL_INT_RESOURCES" ]; then
+    echo "ERROR: You must clone the portal-integration-test project to '$PORTAL_INT_RESOURCES'";
+    exit 1;
+fi
 
 case $1 in
     'asias.localhost_lr7'*)
