@@ -29,6 +29,9 @@ case $1 in
     'facility.dev_lr7'*)
         set_props_file 'portal.driver.properties.facility.dev_lr7';
         ;;
+    'oversight.dev_lr7'*)
+        set_props_file 'portal.driver.properties.oversight.dev_lr7';
+        ;;
     *)
         echo "Invalid coordinate, '$1'";
         exit 1;
