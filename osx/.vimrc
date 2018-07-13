@@ -19,6 +19,18 @@ set shiftwidth=2 " when indenting with '>' key, use 2 spaces
 " vimplug
 call plug#begin('~/.vim/plugged')
 
-Plug 'fatish/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'tpope/vim-sensible'
+Plug 'PProvost/vim-ps1'
+Plug 'janko-m/vim-test'
+Plug 'krisajenkins/vim-projectlocal'
+Plug 'pangloss/vim-javascript'
+Plug 'scrooloose/syntastic'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-git'
+Plug 'tpope/vim-fireplace'
+Plug 'tpope/vim-fugitive'
+Plug 'thinca/vim-prettyprint'
+
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 call plug#end()
