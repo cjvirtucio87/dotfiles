@@ -1,4 +1,5 @@
 source ~/.shell/git
+source ~/.shell/go
 
 export PATH=/usr/local/bin:$PATH
 
@@ -26,3 +27,8 @@ export MANPATH="/usr/local/opt/gawk/libexec/gnuman:$MANPATH"
 # grep
 export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 export MANPATH="/usr/local/opt/grep/libexec/gnuman:$MANPATH"
+
+#### CONSOLE COLOR ####
+# grep
+export GREP_COLOR='1;35;40'
+alias grep='grep --color=auto'
