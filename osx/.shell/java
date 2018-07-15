@@ -1,0 +1,5 @@
+export MVN_VER=3.5.3
+export JAVA_HOME=/Library/Java/Home
+export MVN_HOME=/usr/local/apache-maven-$MVN_VER
+export PATH=$JAVA_HOME/bin:$PATH
+export PATH=$MVN_HOME/bin:$PATH
