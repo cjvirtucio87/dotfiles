@@ -24,7 +24,7 @@ reqs:
 ### FORM I-765
 employment authorization
 
-filed together with `FORM I-485`
+filed together with `FORM I-485` _as category (c)(9)_
 
 reqs: 
 
@@ -63,5 +63,6 @@ You must submit *two identical color passport-style photographs of yourself take
 - be *in color* with a *full face*, *frontal view*, on a *white to off-white background*;
 - head height should measure _1 to 1 3/8 inches_ from the top of your hair to the bottom of your chin, and eye height is between _1 1/8 to 1 3/8 inches_ from the top of your eyes to the bottom of photo;
 - your head must be bare unless you are wearing headwear as required by a religious denomination of which you are a member;
-- using a pencil or felt pen, lightly print your name and A-Number (if 
-any) on the back of the photo.
+- using a pencil or felt pen, lightly print your name and A-Number (if any) on the back of the photo.
+
+###
