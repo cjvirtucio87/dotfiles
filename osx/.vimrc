@@ -32,5 +32,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'thinca/vim-prettyprint'
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
