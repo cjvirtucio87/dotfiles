@@ -33,7 +33,7 @@ A.
 A copy of at least one of the following documents:  
 - Form I-94
 - Arrival-Departure Record (front and back)
-- a printout of your electronic [Form I-94](www.cbp.gov/i94)
+- a printout of your electronic [Form I-94](https://www.cbp.gov/i94)
 - passport or other travel document 
 
 *If you are filing 
