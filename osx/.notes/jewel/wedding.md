@@ -65,4 +65,23 @@ You must submit *two identical color passport-style photographs of yourself take
 - your head must be bare unless you are wearing headwear as required by a religious denomination of which you are a member;
 - using a pencil or felt pen, lightly print your name and A-Number (if any) on the back of the photo.
 
-###
+### REPORT OF MARRIAGE
+
+reqs:
+
+- 4 original filled-up forms
+- cover letter addressed to the _consular section_ indicating service/transaction requested 
+- telephone number/email address as contact info
+- _one_ original and _four_ copies of the marriage record 
+- _one_ original and _four_ copies of the marriage contract/certificate
+- _four_ copies of passports of *BOTH* spouses
+- _four_ copies of additional proof of Philippine citizenship (valid visa, greencard, or work permit)
+- _one_ original and _four_ copies (photocopy) of birth certificate
+- self-addressed return envelope with appropriate stamps for express/priority mail with tracking numbers via USPS, _if report of marriage is to be mailed back_
+- $25 processing fee
+
+### DRIVER'S LICENSE
+
+reqs:
+
+- just fill up form for the driver's license
