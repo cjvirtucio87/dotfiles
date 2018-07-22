@@ -28,6 +28,7 @@ filed together with `FORM I-485`
 
 reqs: 
 A. 
+
 A copy of at least one of the following documents:  
 - Form I-94
 - Arrival-Departure Record (front and back)
@@ -38,6 +39,7 @@ A copy of at least one of the following documents:
 Form I-765 under the (c)(9) category, copies of any of the above are not required.*
 
 B. 
+
 A copy of your *last EAD* (front and back).  *If you were not previously issued an EAD*, you must submit: 
 - a copy of a government-issued identity document (such as a passport) showing your picture, name, and date of birth 
 - a birth certificate with photo ID
@@ -48,6 +50,7 @@ The identity document photocopy must clearly show your facial features and conta
 biographical information.
 
 C. 
+
 Photographs.
 
 You must submit *two identical color passport-style photographs of yourself taken recently
