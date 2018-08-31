@@ -12,8 +12,14 @@ Plug 'tpope/vim-git'
 Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-fugitive'
 Plug 'thinca/vim-prettyprint'
+Plug 'tomasiser/vim-code-dark'
 
 call plug#end()
 
 
 set clipboard=unnamedplus
+
+" vim-code-dark
+set t_Co=256
+set t_ut=
+colorscheme codedark
