@@ -13,6 +13,7 @@ Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-fugitive'
 Plug 'thinca/vim-prettyprint'
 Plug 'tomasiser/vim-code-dark'
+Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
 
@@ -47,3 +48,7 @@ autocmd FileType xml set tabstop=2|set softtabstop=2|set shiftwidth=2
 autocmd FileType html set tabstop=2|set softtabstop=2|set shiftwidth=2
 autocmd FileType xhtml set tabstop=2|set softtabstop=2|set shiftwidth=2
 autocmd FileType yaml set tabstop=2|set softtabstop=2|set shiftwidth=2
+
+" omnisharp
+let g:OmniSharp_server_path = '/mnt/c/OmniSharp/OmniSharp.exe'
+let g:OmniSharp_translate_cygwin_wsl = 1
