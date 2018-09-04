@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 GIT_CONFIG_FILES="${HOME}/.git_config_files"
 
@@ -15,7 +15,7 @@ set_git_config() {
     local coord="$1";
     local git_config_file="${GIT_CONFIG_FILES}/${coord}";
 
-    cp "$git_config_file" "${HOME}/.gitconfig";
+    cat "$git_config_file" > "${HOME}/.gitconfig";
 }
 
 main() {
