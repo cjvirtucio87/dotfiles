@@ -52,3 +52,7 @@ autocmd FileType yaml set tabstop=2|set softtabstop=2|set shiftwidth=2
 " omnisharp
 let g:OmniSharp_server_path = '/mnt/c/OmniSharp/OmniSharp.exe'
 let g:OmniSharp_translate_cygwin_wsl = 1
+
+" nerdtree
+autocmd vimenter * NERDTree
+map <C-n> :NERDTreeToggle<CR>
