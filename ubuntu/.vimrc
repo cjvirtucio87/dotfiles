@@ -13,7 +13,6 @@ Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-fugitive'
 Plug 'thinca/vim-prettyprint'
 Plug 'tomasiser/vim-code-dark'
-Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
 
@@ -56,3 +55,19 @@ let g:OmniSharp_translate_cygwin_wsl = 1
 " nerdtree
 autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
+" pep8
+au BufNewFile,BufRead *.py
+            \ set tabstop=4 |
+            \ set softtabstop=4 |
+            \ set shiftwidth=4 |
+            \ set textwidth=79 |
+            \ set expandtab | 
+            \ set autoindent |
+            \ set fileformat=unix
+
+" unnecessary whitespace
+highlight BadWhitespace ctermbg=red guibg=darkred
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+set encoding=utf-8
