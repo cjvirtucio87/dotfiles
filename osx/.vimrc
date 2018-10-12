@@ -19,6 +19,7 @@ set shiftwidth=2 " when indenting with '>' key, use 2 spaces
 " vimplug
 call plug#begin('~/.vim/plugged')
 
+
 Plug 'tpope/vim-sensible'
 Plug 'PProvost/vim-ps1'
 Plug 'janko-m/vim-test'
@@ -32,6 +33,5 @@ Plug 'tpope/vim-fugitive'
 Plug 'thinca/vim-prettyprint'
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
