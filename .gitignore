@@ -1,7 +1,3 @@
-# cygwin
-cygwin/.vim/plugged
-cygwin/.vim/.netrwhist
-
 # osx
-osx/.vim/plugged
-osx/.vim/.netrwhist
+**/.vim/plugged
+**/.vim/.netrwhist
