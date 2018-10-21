@@ -1,4 +1,7 @@
 " ### GENERAL SETTINGS ###
+
+set number
+
 " colors
 syntax on " turn syntax highlighting on
 colorscheme fruchtig " use selected colorscheme
