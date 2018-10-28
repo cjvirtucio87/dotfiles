@@ -1,0 +1,1 @@
+export PATH=$PATH:/usr/local/mysqlsh-8.0.13/bin
