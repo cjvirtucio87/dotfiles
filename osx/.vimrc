@@ -22,6 +22,9 @@ set shiftwidth=2 " when indenting with '>' key, use 2 spaces
 " vimplug
 call plug#begin('~/.vim/plugged')
 
+" nerdtree
+autocmd vimenter * NERDTree
+map <C-n> :NERDTreeToggle<CR>
 
 Plug 'tpope/vim-sensible'
 Plug 'PProvost/vim-ps1'
