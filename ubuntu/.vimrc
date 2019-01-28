@@ -35,9 +35,9 @@ if &term =~ "xterm\\|rxvt"
 endif
 
 " indentation
-set shiftwidth=4
+set shiftwidth=2
 set softtabstop=0
-set tabstop=8
+set tabstop=4
 set expandtab
 set smarttab
 set number
