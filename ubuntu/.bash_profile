@@ -23,4 +23,3 @@ PATH=$HOME/.helpers/bin:$PATH
 
 source $HOME/.shell_init/git_config/index.sh
 source $HOME/.shell_init/python_config/index.sh
-source $HOME/.shell_init/java_config/index.sh
