@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GIT_CONFIG_FILES="${HOME}/.git_config_files"
+GIT_CONFIG_FILES="${GIT_CONFIG_FILES:-${HOME}/.git_config_files}"
 
 file_check() {
     local coord="$1"; 
