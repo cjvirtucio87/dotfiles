@@ -1,4 +1,7 @@
+# security
 **/.ssh
+**/.kube
+**/.docker
 
 # vim
 **/.vim/plugged
