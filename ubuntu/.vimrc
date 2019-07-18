@@ -54,11 +54,15 @@ let NERDTreeShowHidden=1
 map <C-n> :NERDTreeToggle<CR>
 
 " pep8
+" note: 
+" - line length set to 120; make sure you add a ${HOME}/.config/flake8
+"   file to configure line-length
+" - see: https://github.com/nvie/vim-flake8#max-line-lengths
 au BufNewFile,BufRead *.py
             \ set tabstop=4 |
             \ set softtabstop=4 |
             \ set shiftwidth=4 |
-            \ set textwidth=79 |
+            \ set textwidth=120 |
             \ set expandtab | 
             \ set autoindent |
             \ set fileformat=unix
