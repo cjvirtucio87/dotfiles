@@ -1,0 +1,18 @@
+#!/bin/bash
+
+GIT_CONFIG_PATH="${GIT_CONFIG:-${HOME}/.gitconfig}";
+
+git_config_whoami() {
+    awk -F '=' '/email/ {print $2}' "${GIT_CONFIG_PATH}" | sed 's/^[ \t]*//;s/[ \t]*$//'; 
+}
+
+main() {
+    if [[ -f "${GIT_CONFIG_PATH}" ]]; then
+        git_config_whoami; 
+    else
+        echo "Error! No file at ${GIT_CONFIG_PATH}. Have you set up your git config file yet?"
+        exit 1
+    fi
+}
+
+main "$@"

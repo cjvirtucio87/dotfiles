@@ -35,6 +35,8 @@ main() {
             exit 1;
             ;;
     esac
+
+    echo "git config has been set for ${coord}"
 }
 
-main $@
+main "$@"
