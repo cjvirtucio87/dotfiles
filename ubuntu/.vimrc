@@ -1,6 +1,5 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'tpope/vim-sensible'
 Plug 'vim-perl/vim-perl'
 Plug 'PProvost/vim-ps1'
@@ -15,6 +14,7 @@ Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-fugitive'
 Plug 'thinca/vim-prettyprint'
 Plug 'tomasiser/vim-code-dark'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 call plug#end()
 
@@ -111,3 +111,6 @@ augroup omnisharp_commands
     " Find all code errors/warnings for the current solution and populate the quickfix window
     autocmd FileType cs nnoremap <buffer> <Leader>cc :OmniSharpGlobalCodeCheck<CR>
 augroup END
+
+" allow vim-go gofmt to fail silently so that syntastic can take over
+let g:go_fmt_fail_silently = 1
