@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'tpope/vim-sensible'
 Plug 'vim-perl/vim-perl'
 Plug 'PProvost/vim-ps1'
