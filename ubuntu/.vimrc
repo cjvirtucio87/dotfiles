@@ -112,5 +112,6 @@ augroup omnisharp_commands
     autocmd FileType cs nnoremap <buffer> <Leader>cc :OmniSharpGlobalCodeCheck<CR>
 augroup END
 
-" allow vim-go gofmt to fail silently so that syntastic can take over
+" go
 let g:go_fmt_fail_silently = 1
+let g:syntastic_go_checkers = ['govet', 'errcheck', 'go']
