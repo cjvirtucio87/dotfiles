@@ -76,12 +76,16 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 set encoding=utf-8
 
 " OmniSharp-roslyn:
-let g:OmniSharp_server_path = '/mnt/c/OmniSharp/OmniSharp.exe'
+let g:omnisharp_proc_debug = 1
+let g:OmniSharp_server_stdio = 1 " stdio
+" uncomment below when using windows binaries
+let g:OmniSharp_server_path = '/mnt/c/OmniSharp-Windows/OmniSharp.exe' " stdio
+" let g:OmniSharp_server_path = '/mnt/c/OmniSharp-Windows-Http/OmniSharp.exe' " http
 let g:OmniSharp_translate_cygwin_wsl = 1
-let g:OmniSharp_server_stdio = 1
-let g:syntastic_cs_checkers = ['code_checker']
+" uncomment below when using linux
+" let g:OmniSharp_server_path = '/opt/omnisharp/run'
 let g:OmniSharp_start_server = 0
-let g:OmniSharp_timeout = 5
+" let g:OmniSharp_timeout = 30
 
 augroup omnisharp_commands
     autocmd!
