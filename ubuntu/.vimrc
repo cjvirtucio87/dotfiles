@@ -75,7 +75,8 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 set encoding=utf-8
 
-" OmniSharp-roslyn:
+" OmniSharp
+let g:syntastic_cs_checkers = ['code_checker']
 let g:omnisharp_proc_debug = 1
 let g:OmniSharp_server_stdio = 1 " stdio
 " uncomment below when using windows binaries
