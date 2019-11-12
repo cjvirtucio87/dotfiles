@@ -49,6 +49,7 @@ autocmd FileType xml set tabstop=2|set softtabstop=2|set shiftwidth=2
 autocmd FileType html set tabstop=2|set softtabstop=2|set shiftwidth=2
 autocmd FileType xhtml set tabstop=2|set softtabstop=2|set shiftwidth=2
 autocmd FileType yaml set tabstop=2|set softtabstop=2|set shiftwidth=2
+autocmd FileType cs set tabstop=4|set softtabstop=4|set shiftwidth=4
 
 " nerdtree
 autocmd vimenter * NERDTree
