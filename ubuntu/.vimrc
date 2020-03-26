@@ -46,13 +46,14 @@ set smarttab
 set number
 
 " indentation for specific file types
-autocmd FileType xml set tabstop=2|set softtabstop=2|set shiftwidth=2
-autocmd FileType html set tabstop=2|set softtabstop=2|set shiftwidth=2
-autocmd FileType xhtml set tabstop=2|set softtabstop=2|set shiftwidth=2
-autocmd FileType yaml set tabstop=2|set softtabstop=2|set shiftwidth=2
-autocmd FileType cs set tabstop=4|set softtabstop=4|set shiftwidth=4
-autocmd FileType java set tabstop=4|set softtabstop=4|set shiftwidth=4
-autocmd FileType groovy set tabstop=4|set softtabstop=4|set shiftwidth=4
+autocmd FileType sh set tabstop=2|set softtabstop=2|set shiftwidth=2 expandtab
+autocmd FileType xml set tabstop=2|set softtabstop=2|set shiftwidth=2 expandtab
+autocmd FileType html set tabstop=2|set softtabstop=2|set shiftwidth=2 expandtab
+autocmd FileType xhtml set tabstop=2|set softtabstop=2|set shiftwidth=2 expandtab
+autocmd FileType yaml set tabstop=2|set softtabstop=2|set shiftwidth=2 expandtab
+autocmd FileType cs set tabstop=4|set softtabstop=4|set shiftwidth=4 expandtab
+autocmd FileType java set tabstop=4|set softtabstop=4|set shiftwidth=4 expandtab
+autocmd FileType groovy set tabstop=4|set softtabstop=4|set shiftwidth=4 expandtab
 
 " nerdtree
 autocmd vimenter * NERDTree
