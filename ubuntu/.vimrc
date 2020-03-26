@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'yggdroot/indentline'
 Plug 'junegunn/vader.vim'
 Plug 'tpope/vim-sensible'
 Plug 'vim-perl/vim-perl'
