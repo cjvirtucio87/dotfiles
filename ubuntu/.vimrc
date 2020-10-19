@@ -16,6 +16,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'thinca/vim-prettyprint'
 Plug 'tomasiser/vim-code-dark'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'kshenoy/vim-signature'
 
 call plug#end()
 
