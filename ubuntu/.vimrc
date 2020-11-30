@@ -69,10 +69,6 @@ let NERDTreeShowHidden=1
 map <C-n> :NERDTreeToggle<CR>
 
 " pep8
-" note: 
-" - line length set to 120; make sure you add a ${HOME}/.config/flake8
-"   file to configure line-length
-" - see: https://github.com/nvie/vim-flake8#max-line-lengths
 au BufNewFile,BufRead *.py
             \ set tabstop=4 |
             \ set softtabstop=4 |
@@ -81,6 +77,9 @@ au BufNewFile,BufRead *.py
             \ set expandtab | 
             \ set autoindent |
             \ set fileformat=unix
+
+" using pylint for syntastic
+let g:syntastic_python_checkers = ['pylint']
 
 " unnecessary whitespace
 highlight BadWhitespace ctermbg=red guibg=darkred
