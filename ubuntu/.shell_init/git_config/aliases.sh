@@ -5,7 +5,9 @@ function gaa {
 
 function gcm {
   # commit all files with message as first argument
-  git commit -m "$1"
+  local message="$1"
+  shift
+  git commit -m "${message}" "$@"
 }
 
 function gpoc {
@@ -15,7 +17,9 @@ function gpoc {
 
 function gpocs {
   # push commits to origin and set upstream branch to first argument
-  git push origin --set-upstream "$1"
+  local branch_name="$1"
+  shift
+  git push origin --set-upstream "${branch_name}" "$@"
 }
 
 function gpom {
@@ -30,10 +34,14 @@ function gw {
 
 function gwac {
   # add worktree at path ${HOME}/git/<current-directory-name>-<first-argument>,
-  git worktree add "${HOME}/git/${PWD##*/}-$1" --checkout "$1"
+  local version="$1"
+  shift
+  git worktree add "${HOME}/git/${PWD##*/}-${version}" --checkout "${version}" "$@"
 }
 
 function gwrc {
   # remove worktree at path ${HOME}/git/<current-directory-name>-<first-argument>
-  git worktree remove "${HOME}/git/${PWD##*/}-$1"
+  local version="$1"
+  shift
+  git worktree remove "${HOME}/git/${PWD##*/}-${version}" "$@"
 }
