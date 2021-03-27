@@ -20,8 +20,15 @@ Plug 'kshenoy/vim-signature'
 
 call plug#end()
 
-" clipboard register
-set clipboard=unnamedplus
+" WSL yank support
+" https://superuser.com/a/1557751
+let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
+if executable(s:clip)
+    augroup WSLYank
+        autocmd!
+        autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @0) | endif
+    augroup END
+endif
 
 " vim-code-dark
 set t_Co=256

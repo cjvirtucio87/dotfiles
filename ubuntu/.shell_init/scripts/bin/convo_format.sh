@@ -26,7 +26,7 @@ function main {
       regex_pattern='^(From|Sent|To|Subject):'
       ;;
     'slack')
-      regex_pattern='(^[a-zA-Z :_]+([0-9][0-9]:[0-9][0-9] [AP]M$|[><]{0,1} [0-9] (year|month|day|hour|minute|second)s{0,1} ago)$)'
+      regex_pattern='(^[a-zA-Z :_\(\)]+([0-9]{0,1}[0-9]:[0-9][0-9] [AP]M$|[><]{0,1} [0-9] (year|month|day|hour|minute|second)s{0,1} ago)$)'
       ;;
     *)
       ;;
