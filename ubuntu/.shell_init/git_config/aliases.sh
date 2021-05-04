@@ -1,47 +1,86 @@
 function gaa {
-  # stage all files
+  # Stage all files.
+  #
+  # Parameters:
+  #   varargs: all arguments that git would accept
   git add -A "$@"
 }
 
 function gcm {
-  # commit all files with message as first argument
+  # Commit all files with message as first argument.
+  #
+  # Parameters:
+  #   message: the message for the commit
+  #   varargs: all arguments that git would accept
   local message="$1"
   shift
   git commit -m "${message}" "$@"
 }
 
 function gpoc {
-  # push commits to origin
+  # Push commits to origin.
+  #
+  # Parameters:
+  #   varargs: all arguments that git would accept
   git push origin "$@"
 }
 
 function gpocs {
-  # push commits to origin and set upstream branch to first argument
-  local branch_name="$1"
-  shift
+  # Push commits to origin and set upstream branch to name of current branch.
+  #
+  # Parameters:
+  #   varargs: all arguments that git would accept
+  local branch_name
+  branch_name="$(git rev-parse --abbrev-ref HEAD)"
   git push origin --set-upstream "${branch_name}" "$@"
 }
 
 function gpom {
-  # push commits to master
+  # Push commits to master.
+  #
+  # Parameters:
+  #   varargs: all arguments that git would accept
   git push origin master "$@"
 }
 
 function gw {
-  # shortcut to worktree operations
+  # Shortcut to worktree operations.
+  #
+  # Parameters:
+  #   varargs: all arguments that git would accept
   git worktree "$@"
 }
 
 function gwac {
-  # add worktree at path ${HOME}/git/<current-directory-name>-<first-argument>,
+  # Add worktree at path ${HOME}/git/<current-directory-name>-<version>.
+  #
+  # If the version argument is not passed, current branch is used instead.
+  #
+  # Parameters:
+  #   version: the git commit hash to checkout to (optional)
+  #   varargs: all arguments that git would accept
   local version="$1"
   shift
+  if [[ -z "${version}" ]]; then
+    version="$(git rev-parse --abbrev-ref HEAD)"
+  fi
+
   git worktree add "${HOME}/git/${PWD##*/}-${version}" --checkout "${version}" "$@"
 }
 
 function gwrc {
-  # remove worktree at path ${HOME}/git/<current-directory-name>-<first-argument>
+  # Remove worktree at path ${HOME}/git/<current-directory-name>-<version>.
+  #
+  # If the version argument is not passed, current branch is used instead.
+  #
+  # Parameters:
+  #   version: the git commit hash to checkout to (optional)
+  #   varargs: all arguments that git would accept
   local version="$1"
   shift
+  if [[ -z "${version}" ]]; then
+    version="$(git rev-parse --abbrev-ref HEAD)"
+  fi
+
   git worktree remove "${HOME}/git/${PWD##*/}-${version}" "$@"
 }
