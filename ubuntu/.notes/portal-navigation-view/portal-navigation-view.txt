@@ -1,7 +1,0 @@
-# yuids for node div#_org_mitre_caasd_navigation_favorites_web_FavoritesPortlet_navigation_dropdown_FavoritesMenu
-
-* yui_patched_v3_18_1_1_1542118949901_430
-* yui_patched_v3_18_1_1_1542118949901_3738
-* yui_patched_v3_18_1_1_1542118949901_5255
-
-`yuid` has nothing to do with it.. investigating further...

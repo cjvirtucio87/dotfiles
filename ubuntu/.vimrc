@@ -97,3 +97,6 @@ set encoding=utf-8
 " go
 let g:go_fmt_fail_silently = 1
 let g:syntastic_go_checkers = ['govet', 'errcheck', 'go']
+
+" shellcheck
+let g:syntastic_sh_shellcheck_args = "-x"
