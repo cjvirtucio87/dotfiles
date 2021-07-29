@@ -51,7 +51,7 @@ let g:indentLine_leadingSpaceChar = '.'
 let g:indentLine_showFirstIndentLevel = 1
 let g:indentLine_fileTypeExclude = ['json']
 
-" indentation
+" default indentation
 set shiftwidth=2
 set softtabstop=0
 set tabstop=4
