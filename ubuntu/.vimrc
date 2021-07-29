@@ -11,10 +11,10 @@ Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-git'
-Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-fugitive'
 Plug 'thinca/vim-prettyprint'
-Plug 'tomasiser/vim-code-dark'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'vim-airline/vim-airline'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'kshenoy/vim-signature'
 
@@ -30,10 +30,9 @@ if executable(s:clip)
     augroup END
 endif
 
-" vim-code-dark
-set t_Co=256
-set t_ut=
-colorscheme codedark
+" onehalf
+colorscheme onehalfdark
+let g:airlight_theme='onehalfdark'
 
 " mode-based cursor color
 if &term =~ "xterm\\|rxvt"

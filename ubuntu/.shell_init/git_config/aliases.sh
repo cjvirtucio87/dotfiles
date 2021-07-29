@@ -43,6 +43,11 @@ function gpom {
   git push origin master "$@"
 }
 
+function gralb {
+  # Remove all local branches other than master.
+  git branch | grep -v master | xargs -I {} git branch -d {}
+}
+
 function gw {
   # Shortcut to worktree operations.
   #
