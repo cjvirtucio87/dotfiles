@@ -27,7 +27,12 @@ readonly KNOWN_HOSTS
 
 function refresh_host {
   local host="$1"
-  ssh-keygen -R "${host}"
+  local removal_output=''
+  while [[ ! "${removal_output}" =~ 'not found' ]]; do
+    removal_output="$(ssh-keygen -R "${host}" 2>&1 | grep 'not found')"
+    sleep 1
+  done
+
   ssh-keyscan -H "${host}" >> ~/.ssh/known_hosts
 }
 
