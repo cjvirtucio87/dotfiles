@@ -29,7 +29,13 @@ function refresh_host {
   local host="$1"
   local removal_output=''
   while [[ ! "${removal_output}" =~ 'not found' ]]; do
-    removal_output="$(ssh-keygen -R "${host}" 2>&1 | grep 'not found')"
+    if ! removal_output="$(ssh-keygen -R "${host}" 2>&1)"; then
+      >&2 echo "error!"
+      >&2 echo "${removal_output}"
+      return 1
+    fi
+
+    removal_output="$(printf '%s' "${removal_output}" | grep 'not found')"
     sleep 1
   done
 
@@ -37,9 +43,23 @@ function refresh_host {
 }
 
 function main {
-  for host in "$@"; do
+  local hosts=("$@")
+
+  for host in "${hosts[@]}"; do
     echo "refreshing entry for ${host}"
-    >&2 refresh_host "${host}"
+    local refresh_output
+    if ! refresh_output="$(refresh_host "${host}" 2>&1)"; then
+      >&2 echo "${refresh_output}"
+      >&2 echo "failed to refresh host, ${host}"
+      return 1
+    fi
+
+    if [[ "${refresh_output}" =~ 'Name or service not known' ]]; then
+      >&2 echo "${refresh_output}"
+      >&2 echo "failed to refresh host, ${host}"
+      return 1
+    fi
+
     echo "done"
   done
 }
