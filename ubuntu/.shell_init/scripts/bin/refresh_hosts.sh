@@ -39,7 +39,7 @@ function refresh_host {
     sleep 1
   done
 
-  ssh-keyscan -H "${host}" >> ~/.ssh/known_hosts
+  ssh-keyscan -H "${host}" >> ~/.ssh/known_hosts 2>&1
 }
 
 function main {
@@ -48,7 +48,7 @@ function main {
   for host in "${hosts[@]}"; do
     echo "refreshing entry for ${host}"
     local refresh_output
-    if ! refresh_output="$(refresh_host "${host}" 2>&1)"; then
+    if ! refresh_output="$(refresh_host "${host}")"; then
       >&2 echo "${refresh_output}"
       >&2 echo "failed to refresh host, ${host}"
       return 1
