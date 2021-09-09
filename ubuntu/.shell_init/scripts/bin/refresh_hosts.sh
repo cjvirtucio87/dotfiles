@@ -39,7 +39,20 @@ function refresh_host {
     sleep 1
   done
 
-  ssh-keyscan -H "${host}" >> ~/.ssh/known_hosts 2>&1
+  local refresh_output
+  if ! refresh_output="$(ssh-keyscan -H "${host}" 2>&1)"; then
+    >&2 echo "${refresh_output}"
+    >&2 echo "failed to refresh host, ${host}"
+    return 1
+  fi
+
+  if [[ "${refresh_output}" =~ 'Name or service not known' ]]; then
+    >&2 echo "${refresh_output}"
+    >&2 echo "failed to refresh host, ${host}"
+    return 1
+  fi
+
+  printf '%s' "${refresh_output}" >> "${KNOWN_HOSTS}"
 }
 
 function main {
@@ -47,16 +60,7 @@ function main {
 
   for host in "${hosts[@]}"; do
     echo "refreshing entry for ${host}"
-    local refresh_output
-    if ! refresh_output="$(refresh_host "${host}")"; then
-      >&2 echo "${refresh_output}"
-      >&2 echo "failed to refresh host, ${host}"
-      return 1
-    fi
-
-    if [[ "${refresh_output}" =~ 'Name or service not known' ]]; then
-      >&2 echo "${refresh_output}"
-      >&2 echo "failed to refresh host, ${host}"
+    if ! refresh_host "${host}"; then
       return 1
     fi
 
