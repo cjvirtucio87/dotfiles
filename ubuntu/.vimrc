@@ -61,6 +61,7 @@ set number
 
 " indentation for specific file types
 autocmd FileType sh set tabstop=2|set softtabstop=2|set shiftwidth=2 expandtab
+autocmd FileType bats set tabstop=2|set softtabstop=2|set shiftwidth=2 expandtab
 autocmd FileType xml set tabstop=2|set softtabstop=2|set shiftwidth=2 expandtab
 autocmd FileType html set tabstop=2|set softtabstop=2|set shiftwidth=2 expandtab
 autocmd FileType xhtml set tabstop=2|set softtabstop=2|set shiftwidth=2 expandtab
