@@ -50,6 +50,9 @@ let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_leadingSpaceChar = '.'
 let g:indentLine_showFirstIndentLevel = 1
 let g:indentLine_fileTypeExclude = ['json']
+" disabling for json
+" see: https://github.com/Yggdroot/indentLine/issues/172#issuecomment-918371130
+autocmd Filetype json let g:indentLine_setConceal = 0
 
 " default indentation
 set shiftwidth=2
