@@ -6,6 +6,22 @@ function gaa {
   git add -A "$@"
 }
 
+function gc {
+  # Checkout to a branch.
+  #
+  # Parameters:
+  #   branch: name of the branch to checkout to
+  git checkout "$1"
+}
+
+function gcb {
+  # Create and checkout to a new branch.
+  #
+  # Parameters:
+  #   branch: name of the branch to checkout to
+  git checkout -b "$1"
+}
+
 function gcm {
   # Commit all files with message as first argument.
   #

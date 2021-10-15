@@ -21,4 +21,5 @@ fi
 # dotfiles
 source $HOME/.shell_init/git_config/index.sh
 source $HOME/.shell_init/python_config/index.sh
+source $HOME/.shell_init/history_config/index.sh
 source $HOME/.shell_init/scripts/index.sh
