@@ -47,7 +47,6 @@ endif
 " indentLine plugin config
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 let g:indentLine_leadingSpaceEnabled = 1
-let g:indentLine_leadingSpaceChar = '.'
 let g:indentLine_showFirstIndentLevel = 1
 let g:indentLine_fileTypeExclude = ['json']
 " disabling for json
@@ -103,3 +102,8 @@ let g:syntastic_go_checkers = ['govet', 'errcheck', 'go']
 
 " shellcheck
 let g:syntastic_sh_shellcheck_args = "-x"
+
+" :Bwipeout[!]
+" wipe all deleted/unloaded buffers
+" see: https://vi.stackexchange.com/a/27105
+command! -bar -bang Bwipeout call misc#bwipeout(<bang>0)
