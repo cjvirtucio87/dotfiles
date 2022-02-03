@@ -1,2 +1,0 @@
-||feature||changes||status in DXP||
-|dockbar/view_user_account|[added password change link|https://gitlab.mitre.org/org-mitre-facilitysafety/portal-jsp-hooks/commit/82e7a3fe257f46867832bf27187474a252301ef2]|[~JWANG] is taking care of this, per [this|https://jira.mitre.org/browse/CAASDPORTA-1231?focusedCommentId=122915&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-122915] comment|

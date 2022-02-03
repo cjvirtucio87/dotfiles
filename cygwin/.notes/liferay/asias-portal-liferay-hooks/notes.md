@@ -1,2 +1,0 @@
-||feature||changes||status in DXP||
-|model/UserGroupRoleListener.java| * [when a user is assigned/unassigned a role in a userGroup, that user is then subscribed/unsubscribed to/from the root folder of the userGroup's document library|https://gitlab.mitre.org/org-mitre-asias/portal-liferay-hooks/blob/master/src/main/java/org/mitre/asias/liferay/portal/model/UserGroupRoleListener.java#L60] | absent in DXP |
