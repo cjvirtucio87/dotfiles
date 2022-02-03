@@ -48,7 +48,6 @@ endif
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_showFirstIndentLevel = 1
-let g:indentLine_fileTypeExclude = ['json']
 " disabling for json
 " see: https://github.com/Yggdroot/indentLine/issues/172#issuecomment-918371130
 autocmd Filetype json let g:indentLine_setConceal = 0
@@ -86,6 +85,9 @@ au BufNewFile,BufRead *.py
             \ set expandtab | 
             \ set autoindent |
             \ set fileformat=unix
+
+" disable java checkers
+let g:syntastic_java_checkers = []
 
 " using pylint for syntastic
 let g:syntastic_python_checkers = ['pylint']
