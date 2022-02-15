@@ -60,6 +60,7 @@ set tabstop=4
 " indentation for specific file types
 autocmd FileType bats set tabstop=2|set softtabstop=2|set shiftwidth=2 expandtab
 autocmd FileType cs set tabstop=4|set softtabstop=4|set shiftwidth=4 expandtab
+autocmd FileType go set tabstop=8|set shiftwidth=0|set noexpandtab
 autocmd FileType groovy set tabstop=4|set softtabstop=4|set shiftwidth=4 expandtab
 autocmd FileType html set tabstop=2|set softtabstop=2|set shiftwidth=2 expandtab
 autocmd FileType java set tabstop=4|set softtabstop=4|set shiftwidth=4 expandtab
@@ -71,7 +72,7 @@ autocmd FileType py set tabstop=4|set softtabstop=4|set shiftwidth=4 expandtab
 
 " syntastic
 let g:go_fmt_fail_silently = 1
-let g:syntastic_go_checkers = ['govet', 'errcheck', 'go']
+let g:syntastic_go_checkers = ['golangci_lint']
 let g:syntastic_java_checkers = []
 let g:syntastic_sh_shellcheck_args = "-x"
 let g:syntastic_python_checkers = ['pylint']
