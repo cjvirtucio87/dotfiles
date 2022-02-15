@@ -72,7 +72,8 @@ autocmd FileType py set tabstop=4|set softtabstop=4|set shiftwidth=4 expandtab
 
 " syntastic
 let g:go_fmt_fail_silently = 1
-let g:syntastic_go_checkers = ['golangci_lint']
+" disabling checkers for compiled languages due to painfully long builds
+let g:syntastic_go_checkers = []
 let g:syntastic_java_checkers = []
 let g:syntastic_sh_shellcheck_args = "-x"
 let g:syntastic_python_checkers = ['pylint']
