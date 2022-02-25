@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 function gaa {
   # Stage all files.
   #

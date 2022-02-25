@@ -75,7 +75,7 @@ let g:go_fmt_fail_silently = 1
 " disabling checkers for compiled languages due to painfully long builds
 let g:syntastic_go_checkers = []
 let g:syntastic_java_checkers = []
-let g:syntastic_sh_shellcheck_args = "-x"
+let g:syntastic_sh_shellcheck_args = "-x -P SCRIPTDIR"
 let g:syntastic_python_checkers = ['pylint']
 
 " --- FORMATTING END ---

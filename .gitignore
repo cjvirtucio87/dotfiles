@@ -2,10 +2,12 @@
 **/.ssh
 **/.kube
 **/.docker
+**/.config
 
 # vim
 **/.vim/plugged
 **/.vim/.netrwhist*
 
 *swp
+*swo
 .notes
