@@ -19,7 +19,7 @@ if [ -d "${HOME}/bin" ] ; then
 fi
 
 # dotfiles
-source $HOME/.shell_init/git_config/index.sh
-source $HOME/.shell_init/python_config/index.sh
-source $HOME/.shell_init/history_config/index.sh
+source $HOME/.shell_init/git/index.sh
+source $HOME/.shell_init/python/index.sh
+source $HOME/.shell_init/history/index.sh
 source $HOME/.shell_init/scripts/index.sh
