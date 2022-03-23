@@ -5,7 +5,7 @@ set -e
 ### Inspect an image on a remote registry
 ###
 ### Usage:
-###   inspect_remote_image.sh docker-registry.pd.labs.mitre.org/pd/portal-gis-web-adapter
+###   inspect_remote_image.sh rockylinux:rockylinux
 
 function error_exit {
   local msg="$1"

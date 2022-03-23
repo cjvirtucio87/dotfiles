@@ -14,11 +14,11 @@
 ###  KNOWN_HOSTS: The known_hosts file to manage (default: "${HOME}/.ssh/known_hosts")
 ###
 ### Examples:
-###  Refresh SSH entries for gitlab and caasd-portal-automation:
-###    refresh_hosts gitlab.mitre.org caasd-portal-automation
+###  Refresh SSH entries for host-a.corporate.org and host-b.corporate.org:
+###    refresh_hosts host-a.corporate.org host-b.corporate.org
 ###
 ###  Use a specific known_hosts file:
-###    KNOWN_HOSTS="${HOME}/other_dir/known_hosts" refresh_hosts gitlab.mitre.org
+###    KNOWN_HOSTS="${HOME}/other_dir/known_hosts" refresh_hosts some-host
 
 set -e
 
