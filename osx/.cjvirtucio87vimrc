@@ -1,11 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'yggdroot/indentline'
 Plug 'junegunn/vader.vim'
 Plug 'tpope/vim-sensible'
-Plug 'vim-perl/vim-perl'
-Plug 'PProvost/vim-ps1'
-Plug 'janko-m/vim-test'
 Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -34,15 +30,6 @@ endif
 " highlight unnecessary whitespace
 highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
-
-" indentLine plugin config
-let g:indentLine_char_list = ['|', '¦', '┆', '┊']
-let g:indentLine_leadingSpaceEnabled = 1
-let g:indentLine_showFirstIndentLevel = 1
-" disabling for json
-" see: https://github.com/Yggdroot/indentLine/issues/172#issuecomment-918371130
-autocmd Filetype json let g:indentLine_setConceal = 0
-
 " --- APPEARANCE END ---
 
 " --- FORMATTING START ---
@@ -59,9 +46,7 @@ set tabstop=4
 
 " indentation for specific file types
 autocmd FileType bats set tabstop=2|set softtabstop=2|set shiftwidth=2 expandtab
-autocmd FileType cs set tabstop=4|set softtabstop=4|set shiftwidth=4 expandtab
 autocmd FileType go set tabstop=8|set shiftwidth=0|set noexpandtab
-autocmd FileType groovy set tabstop=4|set softtabstop=4|set shiftwidth=4 expandtab
 autocmd FileType html set tabstop=2|set softtabstop=2|set shiftwidth=2 expandtab
 autocmd FileType java set tabstop=4|set softtabstop=4|set shiftwidth=4 expandtab
 autocmd FileType sh set tabstop=2|set softtabstop=2|set shiftwidth=2 expandtab
@@ -87,13 +72,13 @@ autocmd vimenter * NERDTree
 let NERDTreeShowHidden=1
 map <C-n> :NERDTreeToggle<CR>
 
-" WSL yank support
+" OSX yank support
 " https://superuser.com/a/1557751
-let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
-if executable(s:clip)
-    augroup WSLYank
+let s:pbcopy = '/usr/bin/pbcopy'  " change this path according to your mount point
+if executable(s:pbcopy)
+    augroup OSXYank
         autocmd!
-        autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @0) | endif
+        autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:pbcopy, @0) | endif
     augroup END
 endif
 
