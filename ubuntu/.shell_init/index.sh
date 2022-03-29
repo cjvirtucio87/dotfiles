@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export EDITOR=vim
+
 # shellcheck disable=SC1091
 . "${HOME}/.shell_init/git/index.sh"
 # shellcheck disable=SC1091
