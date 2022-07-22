@@ -25,3 +25,4 @@ My dotfiles for development. Typically installed using [GNU stow](https://www.gn
 1. Open a file with `vim` and run `:PlugInstall`.
 
 This should give you a complete setup with all the dotfiles and custom vim configs from this project.
+
