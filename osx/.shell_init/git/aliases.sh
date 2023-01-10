@@ -63,7 +63,7 @@ function gpom {
 
 function gralb {
   # Remove all local branches other than master.
-  git branch | grep -v --extended-regexp '^(\s*master|\s*main|\*)' | xargs -I {} git branch -d {}
+  git branch | grep -v --extended-regexp '^(\s*master|\s*main|\*|\+)' | xargs -I {} git branch -d {}
 }
 
 function gw {
@@ -79,6 +79,9 @@ function gwac {
   #
   # If the version argument is not passed, current branch is used instead.
   #
+  # If the version has any forward slashes, these will be replaced with hyphens
+  # when creating the worktree directory.
+  #
   # Parameters:
   #   version: the git commit hash to checkout to (optional)
   #   varargs: all arguments that git would accept
@@ -88,7 +91,7 @@ function gwac {
     version="$(git rev-parse --abbrev-ref HEAD)"
   fi
 
-  git worktree add "${HOME}/git/${PWD##*/}-${version}" --checkout "${version}" "$@"
+  git worktree add "${HOME}/git/${PWD##*/}-${version//\//-}" --checkout "${version}" "$@"
 }
 
 function gwrc {
@@ -105,5 +108,5 @@ function gwrc {
     version="$(git rev-parse --abbrev-ref HEAD)"
   fi
 
-  git worktree remove "${HOME}/git/${PWD##*/}-${version}" "$@"
+  git worktree remove "${HOME}/git/${PWD##*/}-${version//\//-}" "$@"
 }
