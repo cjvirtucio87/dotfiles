@@ -18,7 +18,7 @@ colorscheme onehalfdark
 let g:airlight_theme='onehalfdark'
 
 " mode-based cursor color
-if &term =~ "xterm\\|rxvt"
+if &term =~ "xterm\\|rxvt\\|screen-256color"
   let &t_SI = "\<Esc>]12;#11dd00\x7\<Esc>[1 q"
   let &t_EI = "\<Esc>]12;#cc1111\x7\<Esc>[1 q"
   silent !echo -ne "\033]12;\#cc1111\007"
