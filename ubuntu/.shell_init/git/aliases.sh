@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+function cj-git-clone {
+  local repo_name="${1}"
+  local git_dir="${2:-"${HOME}/git"}"
+
+  # Clone any cjvirtucio87 repo
+  git clone "git@github.com:cjvirtucio87/${repo_name}" "${git_dir}/cjvirtucio87/${repo_name}"
+}
+
 function gaa {
   # Stage all files.
   #
