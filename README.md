@@ -17,6 +17,8 @@ My dotfiles for development. Typically installed using [GNU stow](https://www.gn
     ```bash
     # sourcing shell_init scripts
     . "${HOME}/.shell_init/index.sh"
+    # setting EDITOR to desired flavor of vi/vim/nvim
+    export EDITOR=<flavor>
     ```
 1. Configure either `vim` or `nvim`:
     1. For `vim`, Add this to your `.vimrc`:
