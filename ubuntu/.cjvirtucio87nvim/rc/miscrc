@@ -1,1 +1,6 @@
+" map ctrl+N to nvim tree toggle
 map <C-n> :NvimTreeToggle<CR>
+
+" neomake automake
+" see: https://github.com/neomake/neomake#setup
+call neomake#configure#automake('w')

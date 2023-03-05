@@ -1,5 +1,7 @@
 call plug#begin('~/.cjvirtucio87nvim-plugged')
 
+Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-tree/nvim-tree.lua'
+Plug 'neomake/neomake'
 
 call plug#end()
