@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-export PATH="${HOME}/.shell_init/scripts/bin:${PATH}"
+export PATH="${HOME}/.cjvirtucio87sh/scripts/bin:${PATH}"

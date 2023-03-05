@@ -3,10 +3,10 @@
 export EDITOR=vim
 
 # shellcheck disable=SC1091
-. "${HOME}/.shell_init/git/index.sh"
+. "${HOME}/.cjvirtucio87sh/git/index.sh"
 # shellcheck disable=SC1091
-. "${HOME}/.shell_init/python/index.sh"
+. "${HOME}/.cjvirtucio87sh/python/index.sh"
 # shellcheck disable=SC1091
-. "${HOME}/.shell_init/history/index.sh"
+. "${HOME}/.cjvirtucio87sh/history/index.sh"
 # shellcheck disable=SC1091
-. "${HOME}/.shell_init/scripts/index.sh"
+. "${HOME}/.cjvirtucio87sh/scripts/index.sh"
