@@ -1,0 +1,5 @@
+source ~/.cjvirtucio87nvim/pluginsrc
+source ~/.cjvirtucio87nvim/appearancerc
+source ~/.cjvirtucio87nvim/formatrc
+source ~/.cjvirtucio87nvim/miscrc
+source ~/.cjvirtucio87nvim/lateloadingrc

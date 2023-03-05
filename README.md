@@ -10,17 +10,24 @@ My dotfiles for development. Typically installed using [GNU stow](https://www.gn
     cd path/to/dotfiles
     stow ubuntu
     . "${HOME}/.shell_init/index.sh"
-    install_vim_plug.sh
+    # FLAVOR defaults to vim (supported: vim, nvim)
+    FLAVOR=nvim install_vim_plug.sh
     ```
 1. Add this to your `.bash_profile`:
     ```bash
     # sourcing shell_init scripts
     . "${HOME}/.shell_init/index.sh"
     ```
-1. Add this to your `.vimrc`:
+1. Configure either `vim` or `nvim`:
+    1. For `vim`, Add this to your `.vimrc`:
     ```bash
     # sourcing custom vimrc
     source ~/.cjvirtucio87vimrc
+    ```
+    1. For `nvim`, Add this to your `.config/nvim/init.vim`:
+    ```bash
+    # sourcing custom vimrc
+    source ~/.cjvirtucio87nvim/vimrc
     ```
 1. Open a file with `vim` and run `:PlugInstall`.
 
