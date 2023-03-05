@@ -4,3 +4,13 @@ map <C-n> :NvimTreeToggle<CR>
 " neomake automake
 " see: https://github.com/neomake/neomake#setup
 call neomake#configure#automake('w')
+
+let g:neomake_logfile = '/tmp/neomake.log'
+
+let g:neomake_dotnet_maker = {
+  \ 'exe': 'dotnet',
+  \ 'args': ['build'],
+  \ 'buffer_output': 0
+  \ }
+
+let g:neomake_cs_enabled_makers = ['dotnet']
