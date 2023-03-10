@@ -55,4 +55,4 @@ function main {
   ln -s "${VERSIONED_DIR}" "${CURRENT_DIR}"
 }
 
-main
+main "$@"
