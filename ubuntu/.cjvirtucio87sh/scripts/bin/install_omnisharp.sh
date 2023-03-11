@@ -39,7 +39,7 @@ function main {
   log "installing ${VERSIONED_DIR}"
   curl \
     --location \
-    "https://github.com/OmniSharp/omnisharp-roslyn/releases/download/v${OMNISHARP_VERSION}/omnisharp-linux-x86.tar.gz" \
+    "https://github.com/OmniSharp/omnisharp-roslyn/releases/download/v${OMNISHARP_VERSION}/omnisharp-linux-x64-net6.0.tar.gz" \
     | tar \
         --extract \
         --gunzip \
