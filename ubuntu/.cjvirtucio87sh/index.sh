@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export EDITOR=vim
+export EDITOR=nvim
 
 # shellcheck disable=SC1091
 . "${HOME}/.cjvirtucio87sh/git/index.sh"
