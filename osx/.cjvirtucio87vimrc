@@ -54,6 +54,7 @@ autocmd FileType xml set tabstop=2|set softtabstop=2|set shiftwidth=2 expandtab
 autocmd FileType xhtml set tabstop=2|set softtabstop=2|set shiftwidth=2 expandtab
 autocmd FileType yaml set tabstop=2|set softtabstop=2|set shiftwidth=2 expandtab
 autocmd FileType py set tabstop=4|set softtabstop=4|set shiftwidth=4 expandtab
+autocmd FileType tf set tabstop=2|set softtabstop=2|set shiftwidth=2 expandtab
 
 " syntastic
 let g:go_fmt_fail_silently = 1
@@ -62,6 +63,10 @@ let g:syntastic_go_checkers = []
 let g:syntastic_java_checkers = []
 let g:syntastic_sh_shellcheck_args = "-x -P SCRIPTDIR"
 let g:syntastic_python_checkers = ['pylint']
+
+" typescript slowdown
+" see: https://jameschambers.co.uk/vim-typescript-slow#:~:text=In%20Vim%208%2C%20Typescript%20syntax%20highlighting%20is%20insanely,a%20failure%20message%20%27redrawtime%27%20exceeded%2C%20syntax%20highlighting%20disabled.
+set re=0
 
 " --- FORMATTING END ---
 

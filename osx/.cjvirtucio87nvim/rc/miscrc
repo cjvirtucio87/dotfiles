@@ -1,0 +1,2 @@
+" map ctrl+n to nvim tree toggle
+map <C-n> :NvimTreeToggle<CR>
