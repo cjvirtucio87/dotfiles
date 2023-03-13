@@ -8,3 +8,7 @@ require'lspconfig'.omnisharp.setup {
   cmd = { os.getenv("HOME") .. "/.omnisharp/current/OmniSharp" },
   on_attach = on_attach
 }
+
+require'lspconfig'.golangci_lint_ls.setup {
+  cmd = { os.getenv("HOME") .. "/.golangci-lint-langserver/current/golangci-lint-langserver" },
+}
