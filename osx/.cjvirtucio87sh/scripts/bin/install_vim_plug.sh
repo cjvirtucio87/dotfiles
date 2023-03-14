@@ -17,7 +17,8 @@ readonly VIM_AUTOLOAD_DIR="${HOME}/.vim/autoload"
 # shellcheck disable=SC2034
 readonly NVIM_AUTOLOAD_DIR="${HOME}/.local/share/nvim/site/autoload"
 readonly FLAVOR="${FLAVOR:-vim}"
-readonly AUTOLOAD_DIR_VAR="${FLAVOR^^}_AUTOLOAD_DIR"
+AUTOLOAD_DIR_VAR="$(tr '[:lower:]' '[:upper:]' <<<"${FLAVOR}")_AUTOLOAD_DIR"
+readonly AUTOLOAD_DIR_VAR
 readonly AUTOLOAD_DIR="${!AUTOLOAD_DIR_VAR}"
 
 function main {
