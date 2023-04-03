@@ -71,7 +71,7 @@ function gpom {
 
 function gralb {
   # Remove all local branches other than master.
-  git branch | grep -v --extended-regexp '^(\s*master|\*)' | xargs -I {} git branch -d {}
+  git branch | grep -v --extended-regexp '^(\s*master|\s*main|\*)' | xargs -I {} git branch -d {}
 }
 
 function gw {
