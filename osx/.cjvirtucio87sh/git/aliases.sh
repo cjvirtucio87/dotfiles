@@ -20,8 +20,8 @@ function gc {
   # Checkout to a branch.
   #
   # Parameters:
-  #   branch: name of the branch to checkout to
-  git checkout "$1"
+  #   varargs: all arguments that git would accept
+  git checkout "$@"
 }
 
 function gcb {
