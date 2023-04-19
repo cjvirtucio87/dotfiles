@@ -21,3 +21,5 @@ vim.api.nvim_create_autocmd("VimLeave", {
     pattern = "*",
     callback = resetHi, 
 })
+
+vim.cmd[[colorscheme nord]]
