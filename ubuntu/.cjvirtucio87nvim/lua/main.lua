@@ -1,4 +1,6 @@
 require('misc')
+require('appearance')
+require('format')
 require('treesitter-cfg')
 require('lspconfig-cfg')
 require('marks-cfg')

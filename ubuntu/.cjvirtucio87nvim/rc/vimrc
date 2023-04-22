@@ -1,8 +1,6 @@
 set runtimepath^=~/.cjvirtucio87nvim
 
 source ~/.cjvirtucio87nvim/rc/pluginsrc
-source ~/.cjvirtucio87nvim/rc/appearancerc
-source ~/.cjvirtucio87nvim/rc/formatrc
 source ~/.cjvirtucio87nvim/rc/miscrc
 source ~/.cjvirtucio87nvim/rc/lateloadingrc
 
