@@ -28,8 +28,8 @@ My dotfiles for development. Typically installed using [GNU stow](https://www.gn
     ```
     1. For `nvim`, Add this to your `.config/nvim/init.vim`:
     ```bash
-    # sourcing custom vimrc
-    source ~/.cjvirtucio87nvim/rc/vimrc
+    set runtimepath^=~/.cjvirtucio87nvim
+    lua require('main')
     ```
 1. Open a file with `vim` and run `:PlugInstall`.
 

@@ -1,3 +1,4 @@
+require('plugs')
 require('misc')
 require('appearance')
 require('format')
