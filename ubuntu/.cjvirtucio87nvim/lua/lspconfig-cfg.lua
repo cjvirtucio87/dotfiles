@@ -17,6 +17,8 @@ require'lspconfig'.ruby_ls.setup {}
 
 require'lspconfig'.rust_analyzer.setup {}
 
-require'lspconfig'.kotlin_language_server.setup {}
+require'lspconfig'.kotlin_language_server.setup {
+  root_dir = require'lspconfig'.util.root_pattern('', 'settings.gradle.kts', 'gradlew')
+}
 
 require'lspconfig'.gradle_ls.setup{}
