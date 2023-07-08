@@ -14,3 +14,9 @@ require'lspconfig'.golangci_lint_ls.setup {
 }
 
 require'lspconfig'.ruby_ls.setup {}
+
+require'lspconfig'.rust_analyzer.setup {}
+
+require'lspconfig'.kotlin_language_server.setup {}
+
+require'lspconfig'.gradle_ls.setup{}
