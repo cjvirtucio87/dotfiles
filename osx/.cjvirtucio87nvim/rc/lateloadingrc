@@ -1,4 +1,0 @@
-" :Bwipeout[!]
-" wipe all deleted/unloaded buffers
-" see: https://vi.stackexchange.com/a/27105
-command! -bar -bang Bwipeout call misc#bwipeout(<bang>0)
