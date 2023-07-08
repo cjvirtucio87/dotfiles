@@ -1,6 +1,5 @@
 vim.opt.encoding = "utf-8"
 
--- indentation for specific file types
 vim.api.nvim_create_autocmd(
   "FileType",
   {
@@ -78,10 +77,15 @@ vim.api.nvim_create_autocmd(
   }
 )
 
--- defaults
-vim.opt.expandtab = true
-vim.opt.number = true
-vim.opt.shiftwidth = 2
-vim.opt.smarttab = true
-vim.opt.softtabstop = 0
-vim.opt.tabstop = 4
+vim.api.nvim_create_autocmd(
+  "FileType",
+  {
+    pattern = "kotlin",
+    callback = function()
+      vim.opt.tabstop = 4
+      vim.opt.softtabstop = 4
+      vim.opt.shiftwidth = 4
+      vim.opt.expandtab = true
+    end
+  }
+)
