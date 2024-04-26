@@ -5,7 +5,7 @@ function cj-git-clone {
   local git_dir="${2:-"${HOME}/git"}"
 
   # Clone any cjvirtucio87 repo
-  git clone "git@github.com:cjvirtucio87/${repo_name}" "${git_dir}/cjvirtucio87/${repo_name}"
+  git clone "git@github.com-personal:cjvirtucio87/${repo_name}.git" "${git_dir}/cjvirtucio87/${repo_name}"
 }
 
 function gaa {
