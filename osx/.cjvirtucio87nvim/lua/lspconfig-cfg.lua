@@ -13,7 +13,7 @@ require'lspconfig'.golangci_lint_ls.setup {
   cmd = { os.getenv("HOME") .. "/.golangci-lint-langserver/current/golangci-lint-langserver" },
 }
 
-require'lspconfig'.ruby_ls.setup {}
+require'lspconfig'.ruby_lsp.setup {}
 
 require'lspconfig'.rust_analyzer.setup {}
 
