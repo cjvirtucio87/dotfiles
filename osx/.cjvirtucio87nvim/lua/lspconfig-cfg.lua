@@ -19,4 +19,6 @@ require'lspconfig'.rust_analyzer.setup {}
 
 require'lspconfig'.kotlin_language_server.setup {}
 
-require'lspconfig'.gradle_ls.setup{}
+require'lspconfig'.gradle_ls.setup {}
+
+require'lspconfig'.terraform_ls.setup {}
