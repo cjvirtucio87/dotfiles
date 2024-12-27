@@ -1,0 +1,4 @@
+# symlink this file to "${HOME}/Library/Application Support/com.mitchellh.ghostty/config"
+keybind = global:ctrl+`=toggle_quick_terminal
+keybind = cmd+left=previous_tab
+keybind = cmd+right=next_tab
