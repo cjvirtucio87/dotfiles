@@ -5,5 +5,5 @@ require'nvim-treesitter.configs'.setup {
 
   -- treesitter requirements
   -- see: https://stackoverflow.com/a/75092074
-  ensure_installed = { 'c', 'vim' },
+  ensure_installed = { 'c', 'vim', 'lua' },
 }

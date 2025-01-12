@@ -8,5 +8,6 @@ Plug('nvim-tree/nvim-tree.lua')
 Plug('nvim-treesitter/nvim-treesitter', {['do'] = 'TSUpdate'})
 Plug('neovim/nvim-lspconfig')
 Plug('chentoast/marks.nvim')
+Plug('klen/nvim-config-local')
 
 vim.call('plug#end')
