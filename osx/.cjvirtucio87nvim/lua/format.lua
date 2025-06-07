@@ -28,7 +28,7 @@ vim.api.nvim_create_autocmd(
 vim.api.nvim_create_autocmd(
   "FileType",
   {
-    pattern = "bash",
+    pattern = "sh",
     callback = function()
       vim.opt.tabstop = 2
       vim.opt.softtabstop = 2

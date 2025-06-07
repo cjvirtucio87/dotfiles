@@ -16,4 +16,17 @@ Plug('folke/trouble.nvim')
 Plug('nvim-telescope/telescope.nvim')
 Plug('jackMort/ChatGPT.nvim')
 
+-- avante and deps
+Plug('stevearc/dressing.nvim')
+Plug('nvim-lua/plenary.nvim')
+Plug('MunifTanjim/nui.nvim')
+Plug('hrsh7th/nvim-cmp')
+Plug('nvim-tree/nvim-web-devicons')
+Plug('HakonHarnes/img-clip.nvim')
+Plug('zbirenbaum/copilot.lua')
+Plug('yetone/avante.nvim', {['branch'] = 'main', ['do'] = 'make' })
+
+-- Plug('github/copilot.vim')
+Plug('CopilotC-Nvim/CopilotChat.nvim')
+
 vim.call('plug#end')
