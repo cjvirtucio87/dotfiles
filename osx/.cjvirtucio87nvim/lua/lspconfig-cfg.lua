@@ -4,6 +4,9 @@ local on_attach = function(client, bufnr)
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 end
 
+-- nvim-cmp lspconfig setup
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 require'lspconfig'.omnisharp.setup {
   cmd = { os.getenv("HOME") .. "/.omnisharp/current/OmniSharp" },
   on_attach = on_attach
@@ -15,7 +18,9 @@ require'lspconfig'.golangci_lint_ls.setup {
 
 require'lspconfig'.ruby_lsp.setup {}
 
-require'lspconfig'.rust_analyzer.setup {}
+require'lspconfig'.rust_analyzer.setup {
+  capabilities = capabilities -- using nvim-cmp capabilities here
+}
 
 require'lspconfig'.kotlin_language_server.setup {}
 
