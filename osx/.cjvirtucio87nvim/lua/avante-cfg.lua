@@ -9,7 +9,7 @@ require("avante").setup(
     },
     host_mount = vim.loop.cwd(),
     rag_service = {
-      enabled = true,
+      enabled = false,
       llm = {
         endpoint = "https://ai-gateway.zende.sk/v1",
       },

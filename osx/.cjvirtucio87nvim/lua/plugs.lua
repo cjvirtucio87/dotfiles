@@ -2,8 +2,14 @@ vim.call('plug#begin', '~/.cjvirtucio87nvim-plugged')
 
 local Plug = vim.fn['plug#']
 
+-- Themes
+Plug('Shatur/neovim-ayu')
+Plug('patstockwell/vim-monokai-tasty')
+Plug('navarasu/onedark.nvim')
 Plug('jacoborus/tender.vim')
 Plug('shaunsingh/nord.nvim')
+
+Plug('nvim-lualine/lualine.nvim')
 Plug('nvim-tree/nvim-web-devicons')
 Plug('nvim-tree/nvim-tree.lua')
 Plug('nvim-treesitter/nvim-treesitter', {['do'] = 'TSUpdate'})

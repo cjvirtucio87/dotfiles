@@ -17,4 +17,9 @@ vim.api.nvim_create_autocmd("VimLeave", {
     end
 })
 
-vim.cmd("colorscheme tender")
+vim.cmd("colorscheme ayu")
+require('lualine').setup{
+  options = {
+    theme = "ayu"
+  }
+}

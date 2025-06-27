@@ -8,3 +8,5 @@ export EDITOR=nvim
 . "${HOME}/.cjvirtucio87sh/history/index.sh"
 # shellcheck disable=SC1091
 . "${HOME}/.cjvirtucio87sh/scripts/index.sh"
+# shellcheck disable=SC1091
+. "${HOME}/.cjvirtucio87sh/zsh/index.sh"
