@@ -17,4 +17,4 @@ vim.api.nvim_create_autocmd("VimLeave", {
     end
 })
 
-vim.cmd[[colorscheme nord]]
+vim.cmd("colorscheme tender")

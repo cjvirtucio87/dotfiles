@@ -7,6 +7,16 @@ require("avante").setup(
       auto_suggestions = false,
       enable_cursor_planning_mode = true,
     },
+    host_mount = vim.loop.cwd(),
+    rag_service = {
+      enabled = true,
+      llm = {
+        endpoint = "https://ai-gateway.zende.sk/v1",
+      },
+      embed = {
+        endpoint = "https://ai-gateway.zende.sk/v1",
+      }
+    },
     providers = {
       openai = {
         endpoint = "https://ai-gateway.zende.sk/v1",

@@ -2,6 +2,7 @@ vim.call('plug#begin', '~/.cjvirtucio87nvim-plugged')
 
 local Plug = vim.fn['plug#']
 
+Plug('jacoborus/tender.vim')
 Plug('shaunsingh/nord.nvim')
 Plug('nvim-tree/nvim-web-devicons')
 Plug('nvim-tree/nvim-tree.lua')
