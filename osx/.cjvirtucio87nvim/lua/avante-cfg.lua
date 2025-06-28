@@ -2,12 +2,11 @@ require('avante_lib').load()
 require("avante").setup(
   {
     build = "make BUILD_FROM_SOURCE=true",
-    provider = "openai",
+    provider = "claude",
     behavior = {
       auto_suggestions = false,
       enable_cursor_planning_mode = true,
     },
-    host_mount = vim.loop.cwd(),
     rag_service = {
       enabled = false,
       llm = {
@@ -15,7 +14,8 @@ require("avante").setup(
       },
       embed = {
         endpoint = "https://ai-gateway.zende.sk/v1",
-      }
+      },
+      host_mount = vim.loop.cwd(),
     },
     providers = {
       openai = {
