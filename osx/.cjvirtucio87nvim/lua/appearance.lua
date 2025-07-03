@@ -17,9 +17,6 @@ vim.api.nvim_create_autocmd("VimLeave", {
     end
 })
 
-vim.cmd("colorscheme ayu")
-require('lualine').setup{
-  options = {
-    theme = "ayu"
-  }
-}
+vim.cmd("colorscheme nord")
+require('lualine').setup{}
+vim.api.nvim_set_hl(0, "LineNr", { fg = "#FFFFFF" })
