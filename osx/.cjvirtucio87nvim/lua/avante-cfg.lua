@@ -8,14 +8,8 @@ require("avante").setup(
       enable_cursor_planning_mode = true,
     },
     rag_service = {
-      enabled = false,
-      llm = {
-        endpoint = "https://ai-gateway.zende.sk/v1",
-      },
-      embed = {
-        endpoint = "https://ai-gateway.zende.sk/v1",
-      },
-      host_mount = vim.loop.cwd(),
+      runner = 'docker',
+      enabled = true,
     },
     providers = {
       openai = {
