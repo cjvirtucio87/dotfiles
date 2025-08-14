@@ -18,5 +18,14 @@ vim.api.nvim_create_autocmd("VimLeave", {
 })
 
 vim.cmd("colorscheme nord")
-require('lualine').setup{}
+require('lualine').setup{
+  sections = {
+    lualine_a = {
+      {
+        'filename',
+        path = 3
+      }
+    },
+  },
+}
 vim.api.nvim_set_hl(0, "LineNr", { fg = "#FFFFFF" })

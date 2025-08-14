@@ -34,9 +34,6 @@ Plug('HakonHarnes/img-clip.nvim')
 Plug('zbirenbaum/copilot.lua')
 Plug('yetone/avante.nvim', {['branch'] = 'main', ['do'] = 'make' })
 
--- Plug('github/copilot.vim')
-Plug('CopilotC-Nvim/CopilotChat.nvim')
-
 -- autocomplete
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'

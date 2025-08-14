@@ -13,7 +13,7 @@ require'lspconfig'.omnisharp.setup {
 }
 
 require'lspconfig'.golangci_lint_ls.setup {
-  cmd = { os.getenv("HOME") .. "/.golangci-lint-langserver/current/golangci-lint-langserver" },
+  cmd = { "golangci-lint-langserver" },
 }
 
 require'lspconfig'.ruby_lsp.setup {}
