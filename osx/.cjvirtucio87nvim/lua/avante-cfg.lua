@@ -20,8 +20,9 @@ require("avante").setup(
     providers = {
       openai = {
         endpoint = "https://ai-gateway.zende.sk/v1",
-        model = "o3-mini",
+        model = "gpt-5",
         extra_request_body = {
+          temperature = 1,
           max_completion_tokens = 4093,
         }
       }
